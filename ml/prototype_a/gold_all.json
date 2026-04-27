@@ -1,0 +1,2754 @@
+{
+  "01": {
+    "slug": "abdominal_pain_consult",
+    "gold_terms": [
+      "abdominal pain",
+      "lower quadrant",
+      "abdominal",
+      "sigmoid",
+      "diverticulitis",
+      "tenderness"
+    ],
+    "primary_dx": "abdominal pain",
+    "input_path": "prepared/01_abdominal_pain_consult.input.txt"
+  },
+  "02": {
+    "slug": "consult_chest_pain",
+    "gold_terms": [
+      "cystocele",
+      "gastroesophageal reflux disease",
+      "stomach pain",
+      "tinea versicolor",
+      "chest pain",
+      "leukopenia",
+      "multiple problems",
+      "pulses are normal bilaterally",
+      "lower extremities",
+      "tinea",
+      "versicolor",
+      "pulses",
+      "extremities",
+      "reflux",
+      "aciphex",
+      "chest"
+    ],
+    "primary_dx": "cystocele",
+    "input_path": "prepared/02_consult_chest_pain.input.txt"
+  },
+  "03": {
+    "slug": "consult_chest_pain_1",
+    "gold_terms": [
+      "chest pain 1",
+      "chest pain",
+      "emergency room",
+      "dull ache",
+      "precordial",
+      "shortness of breath",
+      "diaphoresis",
+      "coronary spasm",
+      "hyperlipidemia",
+      "negative",
+      "ekg",
+      "coronary artery disease",
+      "cardiac enzyme profile",
+      "exertional activity",
+      "cardiac enzyme",
+      "smoker",
+      "artery",
+      "enzyme",
+      "coronary",
+      "cardiac",
+      "chest"
+    ],
+    "primary_dx": "chest pain 1",
+    "input_path": "prepared/03_consult_chest_pain_1.input.txt"
+  },
+  "04": {
+    "slug": "consult_syncope",
+    "gold_terms": [
+      "hypertension",
+      "hyperlipidemia",
+      "shortness of breath",
+      "coronary artery disease",
+      "seizure activity",
+      "seizure disorder",
+      "coronary",
+      "seizure",
+      "chest",
+      "cardiac",
+      "syncope"
+    ],
+    "primary_dx": "hypertension",
+    "input_path": "prepared/04_consult_syncope.input.txt"
+  },
+  "05": {
+    "slug": "consult_vomiting_nausea",
+    "gold_terms": [
+      "vomiting nausea",
+      "mesothelioma",
+      "nausea",
+      "vomiting",
+      "dehydration",
+      "hepatosplenomegaly",
+      "thrombocytopenia",
+      "constipation",
+      "moderate to severe",
+      "metastatic breast cancer",
+      "nausea and vomiting",
+      "alkaline phosphatase",
+      "platelet count",
+      "breast cancer"
+    ],
+    "primary_dx": "vomiting nausea",
+    "input_path": "prepared/05_consult_vomiting_nausea.input.txt"
+  },
+  "06": {
+    "slug": "cough_abdominal_pain",
+    "gold_terms": [
+      "cough abdominal pain",
+      "abdominal pain",
+      "cough",
+      "pneumonia",
+      "body aches",
+      "bronchitis",
+      "low-salt diet",
+      "generalized body aches",
+      "macular degeneration"
+    ],
+    "primary_dx": "cough abdominal pain",
+    "input_path": "prepared/06_cough_abdominal_pain.input.txt"
+  },
+  "07": {
+    "slug": "elbow_pain_consult",
+    "gold_terms": [
+      "elbow pain",
+      "fracture of the humerus",
+      "neurapraxia",
+      "fracture",
+      "elbow"
+    ],
+    "primary_dx": "elbow pain",
+    "input_path": "prepared/07_elbow_pain_consult.input.txt"
+  },
+  "08": {
+    "slug": "er_report_chest_pain_fever",
+    "gold_terms": [
+      "er report chest pain fever",
+      "chest pain",
+      "fever",
+      "hypertension",
+      "acute myocardial infarction",
+      "urinary tract infection",
+      "unclear etiology"
+    ],
+    "primary_dx": "er report chest pain fever",
+    "input_path": "prepared/08_er_report_chest_pain_fever.input.txt"
+  },
+  "09": {
+    "slug": "gen_med_consult_52",
+    "gold_terms": [
+      "gen med  52",
+      "anxiety",
+      "alcohol abuse",
+      "chest pain",
+      "digoxin toxicity",
+      "digoxin overuse",
+      "atrial fibrillation",
+      "opioid dependence",
+      "toxicity",
+      "dilaudid"
+    ],
+    "primary_dx": "gen med  52",
+    "input_path": "prepared/09_gen_med_consult_52.input.txt"
+  },
+  "10": {
+    "slug": "gen_med_consult_53",
+    "gold_terms": [
+      "gen med  53",
+      "anuria",
+      "septicemia",
+      "acute renal failure",
+      "iv fluids",
+      "respiratory failure",
+      "septic shock",
+      "metabolic acidosis"
+    ],
+    "primary_dx": "gen med  53",
+    "input_path": "prepared/10_gen_med_consult_53.input.txt"
+  },
+  "11": {
+    "slug": "gen_med_consult_54",
+    "gold_terms": [
+      "gen med  54",
+      "psychosomatic",
+      "coronary artery disease",
+      "chest tightness",
+      "emotional argument",
+      "psychological disorders",
+      "supraventricular tachycardia",
+      "headaches"
+    ],
+    "primary_dx": "gen med  54",
+    "input_path": "prepared/11_gen_med_consult_54.input.txt"
+  },
+  "12": {
+    "slug": "gen_med_consult_7",
+    "gold_terms": [
+      "gen med  7",
+      "hypertension",
+      "right-sided weakness",
+      "facial droop",
+      "wheelchair bound",
+      "blood pressure",
+      "swallowing evaluation",
+      "cerebrovascular accident",
+      "weakness"
+    ],
+    "primary_dx": "gen med  7",
+    "input_path": "prepared/12_gen_med_consult_7.input.txt"
+  },
+  "13": {
+    "slug": "gen_med_h_p_1",
+    "gold_terms": [
+      "gen med h p 1",
+      "dvt",
+      "doppler ultrasound",
+      "h&p",
+      "adenocarcinoma",
+      "leg pain",
+      "ovarian cancer",
+      "papillary serous adenocarcinoma",
+      "serous adenocarcinoma",
+      "swelling",
+      "adenocarcinoma of the ovary",
+      "absolute neutrophil count",
+      "serous",
+      "papillary"
+    ],
+    "primary_dx": "gen med h p 1",
+    "input_path": "prepared/13_gen_med_h_p_1.input.txt"
+  },
+  "14": {
+    "slug": "gen_med_h_p_2",
+    "gold_terms": [
+      "gen med h p 2",
+      "weakness",
+      "malaise",
+      "dyspnea on exertion",
+      "weight loss",
+      "atypical pneumonia",
+      "unconjugated bilirubins",
+      "globulin fraction",
+      "heptavax",
+      "pneumocystis carinii",
+      "pneumocystis",
+      "tuberculosis",
+      "pneumonia"
+    ],
+    "primary_dx": "gen med h p 2",
+    "input_path": "prepared/14_gen_med_h_p_2.input.txt"
+  },
+  "15": {
+    "slug": "gen_med_office_note_1",
+    "gold_terms": [
+      "gen med office note 1",
+      "congestive cardiac failure",
+      "ejection fraction",
+      "atrial fibrillation",
+      "congestive cardiac",
+      "cardiac failure",
+      "office",
+      "lisinopril",
+      "metoprolol",
+      "hepatitis",
+      "fibrillation",
+      "hyperthyroidism",
+      "atrial",
+      "cardiac",
+      "congestive"
+    ],
+    "primary_dx": "gen med office note 1",
+    "input_path": "prepared/15_gen_med_office_note_1.input.txt"
+  },
+  "16": {
+    "slug": "flank_pain_consult",
+    "gold_terms": [
+      "flank pain",
+      "unable to urinate",
+      "urinary tract infection",
+      "flank"
+    ],
+    "primary_dx": "flank pain",
+    "input_path": "prepared/16_flank_pain_consult.input.txt"
+  },
+  "17": {
+    "slug": "gen_med_progress_note_1",
+    "gold_terms": [
+      "gen med progress note 1",
+      "diabetes mellitus",
+      "neuropathy",
+      "genernal medicine",
+      "post cerebrovascular accident",
+      "progerss note",
+      "post cerebrovascular",
+      "cerebrovascular accident",
+      "accident",
+      "cerebrovascular",
+      "neurologist",
+      "insulin"
+    ],
+    "primary_dx": "gen med progress note 1",
+    "input_path": "prepared/17_gen_med_progress_note_1.input.txt"
+  },
+  "18": {
+    "slug": "gen_med_progress_note_10",
+    "gold_terms": [
+      "gen med progress note 10",
+      "progress note",
+      "hypertension",
+      "chest pain",
+      "lightheadedness",
+      "shortness of breath",
+      "osteoporosis",
+      "cerebrovascular accident",
+      "compression fracture",
+      "chest x-ray",
+      "osteoarthritis of the knee",
+      "dexa scan",
+      "dexa",
+      "osteoarthritis",
+      "cardiac",
+      "compression",
+      "knee"
+    ],
+    "primary_dx": "gen med progress note 10",
+    "input_path": "prepared/18_gen_med_progress_note_10.input.txt"
+  },
+  "19": {
+    "slug": "gen_med_progress_note_2",
+    "gold_terms": [
+      "gen med progress note 2",
+      "progress note",
+      "fatigue",
+      "osteoarthritis",
+      "back surgery",
+      "chest pain",
+      "cough",
+      "heaviness",
+      "hypercholesterolemia",
+      "hypertension",
+      "palpitations",
+      "pressure",
+      "shortness of breath",
+      "tightness",
+      "surgical scar",
+      "progress"
+    ],
+    "primary_dx": "gen med progress note 2",
+    "input_path": "prepared/19_gen_med_progress_note_2.input.txt"
+  },
+  "20": {
+    "slug": "gen_med_progress_note_3",
+    "gold_terms": [
+      "gen med progress note 3",
+      "diabetes mellitus",
+      "accu-cheks",
+      "sinusitis",
+      "abdominal pain",
+      "constipation",
+      "diarrhea",
+      "hypercholesterolemia",
+      "nausea",
+      "progress note",
+      "vomiting",
+      "weight loss",
+      "colonoscopy",
+      "diabetes"
+    ],
+    "primary_dx": "gen med progress note 3",
+    "input_path": "prepared/20_gen_med_progress_note_3.input.txt"
+  },
+  "21": {
+    "slug": "flank_pain_consult_1",
+    "gold_terms": [
+      "flank pain  1",
+      "flank pain",
+      "ureteral stone",
+      "shockwave lithotripsy",
+      "shockwave",
+      "nausea",
+      "vomiting",
+      "lithotripsy",
+      "ureteral",
+      "stone"
+    ],
+    "primary_dx": "flank pain  1",
+    "input_path": "prepared/21_flank_pain_consult_1.input.txt"
+  },
+  "22": {
+    "slug": "chest_pain_evaluation",
+    "gold_terms": [
+      "chest pain evaluation",
+      "chest pain",
+      "coronary artery disease",
+      "acute myocardial infarction",
+      "cardiac catheterization",
+      "echocardiogram",
+      "hypertension",
+      "hyperlipidemia",
+      "diabetes mellitus type 2",
+      "stent placement",
+      "angioplasty",
+      "ekg",
+      "troponin",
+      "cardiac stress test",
+      "heart failure",
+      "ejection fraction"
+    ],
+    "primary_dx": "chest pain evaluation",
+    "input_path": "prepared/22_chest_pain_evaluation.input.txt"
+  },
+  "23": {
+    "slug": "er_report_chest_pain",
+    "gold_terms": [
+      "er report chest pain",
+      "chest pain",
+      "amphetamines",
+      "emergency department",
+      "esophageal reflux",
+      "mylanta",
+      "emergency",
+      "department",
+      "chest",
+      "infarctions"
+    ],
+    "primary_dx": "er report chest pain",
+    "input_path": "prepared/23_er_report_chest_pain.input.txt"
+  },
+  "24": {
+    "slug": "lightheaded_dizziness",
+    "gold_terms": [
+      "lightheaded dizziness",
+      "passing out",
+      "echocardiogram",
+      "cardiac catheterizatio",
+      "normal sinus rhythm",
+      "cardiac enzyme",
+      "beta blocker",
+      "sinus rhythm",
+      "cardiac",
+      "heart",
+      "sinus",
+      "rhythm",
+      "ekg",
+      "chest",
+      "arrhythmia",
+      "palpitation",
+      "lightheaded",
+      "dizziness"
+    ],
+    "primary_dx": "lightheaded dizziness",
+    "input_path": "prepared/24_lightheaded_dizziness.input.txt"
+  },
+  "25": {
+    "slug": "h_p_nausea_vomiting",
+    "gold_terms": [
+      "h p nausea vomiting",
+      "nausea and vomiting",
+      "diabetic gastroparesis",
+      "gastritis",
+      "poorly controlled hypertension",
+      "chronic renal insufficiency",
+      "obstructive sleep apnea",
+      "gastritis and esophagitis",
+      "abdominal ultrasound",
+      "intractable nausea",
+      "diabetes mellitus",
+      "intractable",
+      "esophagitis",
+      "adrenalectomy",
+      "vomiting",
+      "nausea"
+    ],
+    "primary_dx": "h p nausea vomiting",
+    "input_path": "prepared/25_h_p_nausea_vomiting.input.txt"
+  },
+  "26": {
+    "slug": "consult_rectal_bleeding",
+    "gold_terms": [
+      "heartburn",
+      "family history of esophageal cancer",
+      "repeat colonoscopy",
+      "colonoscopy",
+      "egd",
+      "irc",
+      "barrett's esophagus",
+      "restless legs syndrome",
+      "esophageal cancer",
+      "rectal bleeding",
+      "colon cancer",
+      "rectal",
+      "bleeding",
+      "cancer"
+    ],
+    "primary_dx": "heartburn",
+    "input_path": "prepared/26_consult_rectal_bleeding.input.txt"
+  },
+  "27": {
+    "slug": "dysphagia_hematemesis",
+    "gold_terms": [
+      "dysphagia hematemesis",
+      "gi prophylaxis",
+      "hiv medications",
+      "alcohol abuse",
+      "weight",
+      "prophylaxis",
+      "hematemesis",
+      "esophagus",
+      "dysphagia",
+      "vomiting",
+      "bloody"
+    ],
+    "primary_dx": "dysphagia hematemesis",
+    "input_path": "prepared/27_dysphagia_hematemesis.input.txt"
+  },
+  "28": {
+    "slug": "er_report_stomach_pain",
+    "gold_terms": [
+      "er report stomach pain",
+      "stomach pain",
+      "crampy",
+      "mid-epigastric",
+      "upper quadrant",
+      "appetite",
+      "emesis",
+      "multilobular",
+      "liver parenchyma",
+      "mid epigastric",
+      "epigastric",
+      "lymphadenopathy",
+      "neurological",
+      "stomach",
+      "quadrant",
+      "abdominal",
+      "liver"
+    ],
+    "primary_dx": "er report stomach pain",
+    "input_path": "prepared/28_er_report_stomach_pain.input.txt"
+  },
+  "29": {
+    "slug": "lower_quadrant_pain",
+    "gold_terms": [
+      "lower quadrant pain",
+      "right lower quadrant pain",
+      "white blood cell count",
+      "lower quadrant",
+      "bilirubin",
+      "quadrant"
+    ],
+    "primary_dx": "lower quadrant pain",
+    "input_path": "prepared/29_lower_quadrant_pain.input.txt"
+  },
+  "30": {
+    "slug": "rectal_bleeding_consult",
+    "gold_terms": [
+      "stomach discomfort",
+      "colitis",
+      "sepsis",
+      "hernia repair",
+      "rectal bleeding",
+      "hernia",
+      "diarrhea",
+      "stomach"
+    ],
+    "primary_dx": "stomach discomfort",
+    "input_path": "prepared/30_rectal_bleeding_consult.input.txt"
+  },
+  "31": {
+    "slug": "arm_pain_neuro_consult",
+    "gold_terms": [
+      "arm pain neuro",
+      "arm pain",
+      "deep tendon reflexes",
+      "arm",
+      "mri",
+      "spine",
+      "neurological",
+      "nerves",
+      "reflexes",
+      "hand",
+      "sensation",
+      "fingers",
+      "neck"
+    ],
+    "primary_dx": "arm pain neuro",
+    "input_path": "prepared/31_arm_pain_neuro_consult.input.txt"
+  },
+  "32": {
+    "slug": "dizziness_recurrent",
+    "gold_terms": [
+      "dizziness recurrent",
+      "recurrent dizziness",
+      "shortness of breath",
+      "rotational sensation",
+      "earache",
+      "headaches",
+      "extremity",
+      "sensation",
+      "numbness",
+      "dizziness",
+      "pains"
+    ],
+    "primary_dx": "dizziness recurrent",
+    "input_path": "prepared/32_dizziness_recurrent.input.txt"
+  },
+  "33": {
+    "slug": "neck_lower_back_pain_consult",
+    "gold_terms": [
+      "neck lower back pain",
+      "vehicular trauma",
+      "low back syndrome",
+      "lower extremities",
+      "cervical lordosis",
+      "muscle spasm",
+      "lumbar lordosis",
+      "sensory deficits",
+      "spine films",
+      "cervical spine",
+      "mri scan",
+      "chiropractic treatment",
+      "neck",
+      "chiropractic",
+      "vehicular",
+      "trauma",
+      "lordosis",
+      "spine",
+      "lumbar",
+      "cervicalgia"
+    ],
+    "primary_dx": "neck lower back pain",
+    "input_path": "prepared/33_neck_lower_back_pain_consult.input.txt"
+  },
+  "34": {
+    "slug": "neuro_consult_leg_weakness",
+    "gold_terms": [
+      "neuro  leg weakness",
+      "hyperckemia",
+      "emg and nerve",
+      "nerve conduction studies",
+      "leg weakness",
+      "leg",
+      "weakness",
+      "dorsiflexion",
+      "plantar",
+      "neuropathy",
+      "muscles"
+    ],
+    "primary_dx": "neuro  leg weakness",
+    "input_path": "prepared/34_neuro_consult_leg_weakness.input.txt"
+  },
+  "35": {
+    "slug": "ankle_pain",
+    "gold_terms": [
+      "ankle pain",
+      "accutane",
+      "foot or ankle sprain",
+      "ankle sprain",
+      "ankle",
+      "sprain",
+      "splint",
+      "fracture"
+    ],
+    "primary_dx": "ankle pain",
+    "input_path": "prepared/35_ankle_pain.input.txt"
+  },
+  "36": {
+    "slug": "h_p_weakness",
+    "gold_terms": [
+      "h p weakness",
+      "weakness",
+      "arm weakness",
+      "speech difficulties",
+      "headache",
+      "visual changes",
+      "chest pain",
+      "shortness of breath",
+      "weight loss",
+      "fevers",
+      "chills",
+      "sweats",
+      "nausea",
+      "vomiting",
+      "abdominal pain",
+      "cerebrovascular accident",
+      "cerebral artery",
+      "urinary tract infection",
+      "dehydration",
+      "diuretics",
+      "weakness with speech difficulties",
+      "life care center",
+      "diabetes mellitus",
+      "sided weakness",
+      "expressive aphasia",
+      "tract infection",
+      "urinary tract",
+      "arm",
+      "diabetes",
+      "mellitus"
+    ],
+    "primary_dx": "h p weakness",
+    "input_path": "prepared/36_h_p_weakness.input.txt"
+  },
+  "37": {
+    "slug": "dental_pain",
+    "gold_terms": [
+      "dental pain",
+      "dental abscess",
+      "dental block",
+      "nerve block",
+      "mandible",
+      "swelling",
+      "dental"
+    ],
+    "primary_dx": "dental pain",
+    "input_path": "prepared/37_dental_pain.input.txt"
+  },
+  "38": {
+    "slug": "dental_pain_emergency_visit",
+    "gold_terms": [
+      "dental pain emergency visit",
+      "dental pain",
+      "jaw",
+      "bupivacaine",
+      "mandibular teeth",
+      "dental abscess",
+      "coronary artery",
+      "emergency department",
+      "tongue",
+      "dental"
+    ],
+    "primary_dx": "dental pain emergency visit",
+    "input_path": "prepared/38_dental_pain_emergency_visit.input.txt"
+  },
+  "39": {
+    "slug": "er_report_rib_cage_pain",
+    "gold_terms": [
+      "er report rib cage pain",
+      "abdominal pain",
+      "unknown etiology",
+      "rib cage",
+      "emergency"
+    ],
+    "primary_dx": "er report rib cage pain",
+    "input_path": "prepared/39_er_report_rib_cage_pain.input.txt"
+  },
+  "40": {
+    "slug": "foot_pain",
+    "gold_terms": [
+      "accutane",
+      "foot pain",
+      "dorsal aspect",
+      "dorsum of the foot",
+      "avulsion lacerations",
+      "foot"
+    ],
+    "primary_dx": "accutane",
+    "input_path": "prepared/40_foot_pain.input.txt"
+  },
+  "41": {
+    "slug": "hematuria_er_visit",
+    "gold_terms": [
+      "voiding",
+      "constipation",
+      "hematuria",
+      "foley catheter",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "urine culture",
+      "renal insufficiency",
+      "hypertension",
+      "high cholesterol"
+    ],
+    "primary_dx": "voiding",
+    "input_path": "prepared/41_hematuria_er_visit.input.txt"
+  },
+  "42": {
+    "slug": "left_lower_quadrant_pain_er_visit",
+    "gold_terms": [
+      "left lower quadrant pain",
+      "bowel movement",
+      "constipation",
+      "fetal heart",
+      "nausea",
+      "vomiting",
+      "vaginal",
+      "fetal",
+      "gravida",
+      "bowel"
+    ],
+    "primary_dx": "left lower quadrant pain",
+    "input_path": "prepared/42_left_lower_quadrant_pain_er_visit.input.txt"
+  },
+  "43": {
+    "slug": "syncope_er_visit",
+    "gold_terms": [
+      "ejection fraction",
+      "coronary artery bypass grafting",
+      "coronary artery disease",
+      "v/q scan",
+      "bypass grafting",
+      "artery bypass",
+      "coronary artery",
+      "bypass",
+      "ivc",
+      "chronic",
+      "syncope",
+      "post",
+      "coronary"
+    ],
+    "primary_dx": "ejection fraction",
+    "input_path": "prepared/43_syncope_er_visit.input.txt"
+  },
+  "44": {
+    "slug": "syncope_er_visit_1",
+    "gold_terms": [
+      "syncope  1",
+      "residual deficit",
+      "headache",
+      "ct scan",
+      "syncopal episode",
+      "stress test",
+      "blood pressure",
+      "syncope"
+    ],
+    "primary_dx": "syncope  1",
+    "input_path": "prepared/44_syncope_er_visit_1.input.txt"
+  },
+  "45": {
+    "slug": "testicular_pain",
+    "gold_terms": [
+      "testicular pain",
+      "testicular problem",
+      "bilateral testes fixation",
+      "torsion detorsion",
+      "torsion",
+      "testis",
+      "masses",
+      "testicular"
+    ],
+    "primary_dx": "testicular pain",
+    "input_path": "prepared/45_testicular_pain.input.txt"
+  },
+  "46": {
+    "slug": "ankle_pain_consult",
+    "gold_terms": [
+      "consult - history and phy",
+      "ankle pain",
+      "x-ray",
+      "ankle",
+      "fracture",
+      "sprain",
+      "ankle sprain",
+      "injuries"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/46_ankle_pain_consult.input.txt"
+  },
+  "47": {
+    "slug": "headache_emergency_visit",
+    "gold_terms": [
+      "headache emergency visit",
+      "accutane",
+      "cephalgia",
+      "rhomboid muscle",
+      "frontal headache",
+      "muscle tension cephalgia",
+      "rhomboid muscle spasm",
+      "headache"
+    ],
+    "primary_dx": "headache emergency visit",
+    "input_path": "prepared/47_headache_emergency_visit.input.txt"
+  },
+  "48": {
+    "slug": "bilateral_hip_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "bilateral hip pain",
+      "femoroacetabular",
+      "impingement",
+      "hip"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/48_bilateral_hip_pain.input.txt"
+  },
+  "49": {
+    "slug": "consult_jaw_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "jaw pain",
+      "mandible",
+      "numbness and tingling",
+      "teeth and tongue",
+      "nasal septum",
+      "tongue",
+      "numbness",
+      "jaw"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/49_consult_jaw_pain.input.txt"
+  },
+  "50": {
+    "slug": "consult_knee_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "medifast",
+      "medifast diet",
+      "obesity",
+      "gastric bypass",
+      "knee pain",
+      "weight reduction",
+      "knee"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/50_consult_knee_pain.input.txt"
+  },
+  "51": {
+    "slug": "ear_pain_drainage",
+    "gold_terms": [
+      "ear pain drainage",
+      "consult - history and phy",
+      "drainage",
+      "ear hurting",
+      "ear pain",
+      "otitis media",
+      "otorrhea",
+      "ear pain with drainage",
+      "otitis",
+      "media",
+      "ear"
+    ],
+    "primary_dx": "ear pain drainage",
+    "input_path": "prepared/51_ear_pain_drainage.input.txt"
+  },
+  "52": {
+    "slug": "foot_pain_consultation",
+    "gold_terms": [
+      "foot pain consultation",
+      "consult - history and phy",
+      "foot pain",
+      "calcaneocuboid joint",
+      "dorsal aspect",
+      "dorsal talonavicular joint",
+      "foot injuries",
+      "hindfoot",
+      "midfoot",
+      "rehab program",
+      "walking boot",
+      "weightbearing",
+      "talonavicular joint",
+      "dorsal",
+      "talonavicular",
+      "ankle",
+      "foot",
+      "tenderness"
+    ],
+    "primary_dx": "foot pain consultation",
+    "input_path": "prepared/52_foot_pain_consultation.input.txt"
+  },
+  "53": {
+    "slug": "hand_pain_consult",
+    "gold_terms": [
+      "consult - history and phy",
+      "hand pain",
+      "pain",
+      "hand",
+      "metacarpals"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/53_hand_pain_consult.input.txt"
+  },
+  "54": {
+    "slug": "hematuria_consult",
+    "gold_terms": [
+      "consult - history and phy",
+      "prostate cancer",
+      "bleeding",
+      "gross hematuria",
+      "speech impediment",
+      "hematuria",
+      "coagulopathy",
+      "blood"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/54_hematuria_consult.input.txt"
+  },
+  "55": {
+    "slug": "lower_back_pain",
+    "gold_terms": [
+      "lower back pain",
+      "consult - history and phy",
+      "back pain",
+      "lumbar muscle strain",
+      "chronic back pain",
+      "illness",
+      "lower",
+      "medications"
+    ],
+    "primary_dx": "lower back pain",
+    "input_path": "prepared/55_lower_back_pain.input.txt"
+  },
+  "56": {
+    "slug": "neck_back_pain",
+    "gold_terms": [
+      "neck back pain",
+      "consult - history and phy",
+      "neck pain",
+      "cervical spinal stenosis",
+      "lumbar radiculopathy",
+      "lumbar spinal stenosis",
+      "osteoarthritis",
+      "bilateral lower extremity pain",
+      "low back pain",
+      "myofascial pain",
+      "pain syndrome",
+      "spondylolisthesis",
+      "thoracalgia",
+      "trapezius",
+      "lumbar spine",
+      "spinal stenosis",
+      "lower extremity",
+      "musculoskeletal",
+      "stenosis",
+      "periscapular",
+      "neck",
+      "spine",
+      "tenderness",
+      "lumbar"
+    ],
+    "primary_dx": "neck back pain",
+    "input_path": "prepared/56_neck_back_pain.input.txt"
+  },
+  "57": {
+    "slug": "psych_consult_pain_meds",
+    "gold_terms": [
+      "psych  pain meds",
+      "consult - history and phy",
+      "psychiatric consultation",
+      "consultation",
+      "gaf",
+      "mental status examination",
+      "management of pain medications",
+      "auditory or visual hallucinations",
+      "delusions",
+      "hallucinations",
+      "homicidal ideation",
+      "obsessions",
+      "pain medications",
+      "phobias",
+      "psychiatric history",
+      "psychiatric problems",
+      "psychiatric symptoms",
+      "suicidal ideation",
+      "coronary artery disease",
+      "coronary artery",
+      "psych",
+      "psychiatric"
+    ],
+    "primary_dx": "psych  pain meds",
+    "input_path": "prepared/57_psych_consult_pain_meds.input.txt"
+  },
+  "58": {
+    "slug": "shoulder_pain_consult",
+    "gold_terms": [
+      "consult - history and phy",
+      "shoulder pain",
+      "history of present problem",
+      "cortisone shot",
+      "no numbness or tingling",
+      "rhomboids",
+      "scapula",
+      "shoulder impingement",
+      "focal findings",
+      "shoulder"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/58_shoulder_pain_consult.input.txt"
+  },
+  "59": {
+    "slug": "weight_gain_and_edema",
+    "gold_terms": [
+      "weight gain and edema",
+      "consult - history and phy",
+      "hypothyroidism",
+      "edema",
+      "weight gain",
+      "fibromyalgia",
+      "inflammatory bowel disease",
+      "crohn disease",
+      "copd",
+      "thyroid disorder"
+    ],
+    "primary_dx": "weight gain and edema",
+    "input_path": "prepared/59_weight_gain_and_edema.input.txt"
+  },
+  "60": {
+    "slug": "wrist_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "wrist pain",
+      "scapholunate",
+      "tenderness to palpation",
+      "three views",
+      "traumatic wrist injury",
+      "ulnar styloid nonunion",
+      "ulnar styloid",
+      "wrist",
+      "union",
+      "soreness",
+      "styloid",
+      "ulnar"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/60_wrist_pain.input.txt"
+  },
+  "61": {
+    "slug": "hip_pain",
+    "gold_terms": [
+      "office notes",
+      "hip pain",
+      "radiculopathy",
+      "degenerative changes",
+      "avascular necrosis",
+      "hip resurfacing",
+      "arthrodesis",
+      "hip replacement",
+      "avn"
+    ],
+    "primary_dx": "office notes",
+    "input_path": "prepared/61_hip_pain.input.txt"
+  },
+  "62": {
+    "slug": "leg_pain_progress_note",
+    "gold_terms": [
+      "leg pain progress note",
+      "soap / chart / progress notes",
+      "orthopedic",
+      "progress note",
+      "back",
+      "cephalgia",
+      "discectomy",
+      "lifting",
+      "myelogram",
+      "pain",
+      "pain level",
+      "physical therapy",
+      "restrictions",
+      "sacrum",
+      "thigh",
+      "medrol dosepak",
+      "medrol",
+      "dosepak"
+    ],
+    "primary_dx": "leg pain progress note",
+    "input_path": "prepared/62_leg_pain_progress_note.input.txt"
+  },
+  "63": {
+    "slug": "leg_pain_bone_pain",
+    "gold_terms": [
+      "leg pain bone pain",
+      "soap / chart / progress notes",
+      "cmp",
+      "hypercholesterolemia",
+      "leg pain",
+      "type ii diabetes",
+      "ankle",
+      "blood sugars",
+      "bone pain",
+      "buttocks",
+      "pain",
+      "radiates from her buttocks",
+      "leg pain/bone",
+      "leg",
+      "sugars",
+      "weight"
+    ],
+    "primary_dx": "leg pain bone pain",
+    "input_path": "prepared/63_leg_pain_bone_pain.input.txt"
+  },
+  "64": {
+    "slug": "lower_extremity_pain",
+    "gold_terms": [
+      "lower extremity pain",
+      "pain management",
+      "selective nerve root block",
+      "lumbar radiculopathy",
+      "lumbar spinal stenosis",
+      "lumbar spondylolisthesis",
+      "back pain",
+      "extremity pain",
+      "lumbar ct",
+      "myelogram",
+      "postdural puncture",
+      "spondylolisthesis",
+      "lower extremity",
+      "lumbar",
+      "lower",
+      "asdf"
+    ],
+    "primary_dx": "lower extremity pain",
+    "input_path": "prepared/64_lower_extremity_pain.input.txt"
+  },
+  "65": {
+    "slug": "itchy_rash_er_visit",
+    "gold_terms": [
+      "urticaria",
+      "pruritus",
+      "lip swelling",
+      "allergic reaction",
+      "itchy rash",
+      "torso",
+      "swelling",
+      "itchy",
+      "rash"
+    ],
+    "primary_dx": "urticaria",
+    "input_path": "prepared/65_itchy_rash_er_visit.input.txt"
+  },
+  "66": {
+    "slug": "jaw_pain_er_visit",
+    "gold_terms": [
+      "jaw pain",
+      "dental appointment",
+      "ellis type ii fracture",
+      "ellis type",
+      "dental fracture",
+      "toothache",
+      "tenderness",
+      "pressure",
+      "erythema"
+    ],
+    "primary_dx": "jaw pain",
+    "input_path": "prepared/66_jaw_pain_er_visit.input.txt"
+  },
+  "67": {
+    "slug": "nausea_er_visit",
+    "gold_terms": [
+      "fever",
+      "chills",
+      "sweats",
+      "ear pain",
+      "uri symptoms",
+      "cough",
+      "dyspnea",
+      "chest pain",
+      "vomiting",
+      "diarrhea",
+      "abdominal pain",
+      "melena",
+      "hematochezia",
+      "urinary symptoms",
+      "headache",
+      "neck pain",
+      "back pain",
+      "weakness",
+      "paresthesias",
+      "feeling faint",
+      "saline lock",
+      "edema",
+      "hemoglobin",
+      "nausea",
+      "wellbutrin"
+    ],
+    "primary_dx": "fever",
+    "input_path": "prepared/67_nausea_er_visit.input.txt"
+  },
+  "68": {
+    "slug": "nausea_vomiting_er_visit",
+    "gold_terms": [
+      "nausea vomiting",
+      "iv hydration",
+      "elevated alt",
+      "emergency",
+      "nausea",
+      "vomiting"
+    ],
+    "primary_dx": "nausea vomiting",
+    "input_path": "prepared/68_nausea_vomiting_er_visit.input.txt"
+  },
+  "69": {
+    "slug": "pain_from_hernia_er_consult",
+    "gold_terms": [
+      "pain from hernia er",
+      "blood in stool",
+      "nausea",
+      "capillary refill",
+      "angiogram",
+      "hernia",
+      "extremity"
+    ],
+    "primary_dx": "pain from hernia er",
+    "input_path": "prepared/69_pain_from_hernia_er_consult.input.txt"
+  },
+  "70": {
+    "slug": "air_under_diaphragm_consult",
+    "gold_terms": [
+      "air under diaphragm",
+      "free air",
+      "hyponatremia",
+      "air under the diaphragm",
+      "intra abdominal pathology",
+      "abdominal",
+      "pathology",
+      "obtunded",
+      "diaphragm"
+    ],
+    "primary_dx": "air under diaphragm",
+    "input_path": "prepared/70_air_under_diaphragm_consult.input.txt"
+  },
+  "71": {
+    "slug": "annual_health_maintenance_exam",
+    "gold_terms": [
+      "annual health maintenance exam",
+      "tinnitus",
+      "dyslipidemia",
+      "annual health maintenance",
+      "health",
+      "hemorrhoids",
+      "benign"
+    ],
+    "primary_dx": "annual health maintenance exam",
+    "input_path": "prepared/71_annual_health_maintenance_exam.input.txt"
+  },
+  "72": {
+    "slug": "chest_pain_evaluation",
+    "gold_terms": [
+      "chest pain evaluation",
+      "chest pain",
+      "coronary artery disease",
+      "acute myocardial infarction",
+      "cardiac catheterization",
+      "echocardiogram",
+      "hypertension",
+      "hyperlipidemia",
+      "diabetes mellitus type 2",
+      "stent placement",
+      "angioplasty",
+      "ekg",
+      "troponin",
+      "cardiac stress test",
+      "heart failure",
+      "ejection fraction"
+    ],
+    "primary_dx": "chest pain evaluation",
+    "input_path": "prepared/72_chest_pain_evaluation.input.txt"
+  },
+  "73": {
+    "slug": "ant_bait_exposure_er_visit",
+    "gold_terms": [
+      "ant bait exposure",
+      "borax",
+      "vomiting",
+      "exposure to ant bait",
+      "ant bait",
+      "exposure",
+      "symptoms"
+    ],
+    "primary_dx": "ant bait exposure",
+    "input_path": "prepared/73_ant_bait_exposure_er_visit.input.txt"
+  },
+  "74": {
+    "slug": "er_report_chest_pain",
+    "gold_terms": [
+      "er report chest pain",
+      "chest pain",
+      "amphetamines",
+      "emergency department",
+      "esophageal reflux",
+      "mylanta",
+      "emergency",
+      "department",
+      "chest",
+      "infarctions"
+    ],
+    "primary_dx": "er report chest pain",
+    "input_path": "prepared/74_er_report_chest_pain.input.txt"
+  },
+  "75": {
+    "slug": "antibiotic_management_consult",
+    "gold_terms": [
+      "mssa",
+      "methicillin-sensitive staphylococcus aureus",
+      "intravenous antibiotic therapy",
+      "foot ulcer",
+      "antibiotic management",
+      "staphylococcus aureus",
+      "intravenous antibiotic",
+      "bone scan",
+      "antibiotic therapy",
+      "wound care",
+      "injured",
+      "wound",
+      "antibiotic",
+      "osteomyelitis"
+    ],
+    "primary_dx": "mssa",
+    "input_path": "prepared/75_antibiotic_management_consult.input.txt"
+  },
+  "76": {
+    "slug": "lightheaded_dizziness",
+    "gold_terms": [
+      "lightheaded dizziness",
+      "passing out",
+      "echocardiogram",
+      "cardiac catheterizatio",
+      "normal sinus rhythm",
+      "cardiac enzyme",
+      "beta blocker",
+      "sinus rhythm",
+      "cardiac",
+      "heart",
+      "sinus",
+      "rhythm",
+      "ekg",
+      "chest",
+      "arrhythmia",
+      "palpitation",
+      "lightheaded",
+      "dizziness"
+    ],
+    "primary_dx": "lightheaded dizziness",
+    "input_path": "prepared/76_lightheaded_dizziness.input.txt"
+  },
+  "77": {
+    "slug": "antibiotic_therapy_consult",
+    "gold_terms": [
+      "bilateral lower extremity",
+      "lower extremity cellulitis",
+      "lower extremity lymphedema",
+      "active cellulitis",
+      "morbid obesity",
+      "lymphedema wraps",
+      "antibiotic therapy",
+      "lower extremity",
+      "cellulitis",
+      "lymphedema",
+      "antibiotic",
+      "therapy"
+    ],
+    "primary_dx": "bilateral lower extremity",
+    "input_path": "prepared/77_antibiotic_therapy_consult.input.txt"
+  },
+  "78": {
+    "slug": "asbestos_exposure_hemoptysis",
+    "gold_terms": [
+      "asbestos exposure hemoptysis",
+      "mesothelioma",
+      "acute bronchitis",
+      "pleural effusion",
+      "thoracentesis",
+      "risk for mesothelioma",
+      "icd implantation",
+      "asbestos exposure",
+      "asbestos",
+      "hemoptysis"
+    ],
+    "primary_dx": "asbestos exposure hemoptysis",
+    "input_path": "prepared/78_asbestos_exposure_hemoptysis.input.txt"
+  },
+  "79": {
+    "slug": "consult_rectal_bleeding",
+    "gold_terms": [
+      "heartburn",
+      "family history of esophageal cancer",
+      "repeat colonoscopy",
+      "colonoscopy",
+      "egd",
+      "irc",
+      "barrett's esophagus",
+      "restless legs syndrome",
+      "esophageal cancer",
+      "rectal bleeding",
+      "colon cancer",
+      "rectal",
+      "bleeding",
+      "cancer"
+    ],
+    "primary_dx": "heartburn",
+    "input_path": "prepared/79_consult_rectal_bleeding.input.txt"
+  },
+  "80": {
+    "slug": "blood_in_toilet",
+    "gold_terms": [
+      "blood in toilet",
+      "gastrointestinal",
+      "gastrointestinal bleeding",
+      "toilet",
+      "bleeding",
+      "blood"
+    ],
+    "primary_dx": "blood in toilet",
+    "input_path": "prepared/80_blood_in_toilet.input.txt"
+  },
+  "81": {
+    "slug": "dysphagia_hematemesis",
+    "gold_terms": [
+      "dysphagia hematemesis",
+      "gi prophylaxis",
+      "hiv medications",
+      "alcohol abuse",
+      "weight",
+      "prophylaxis",
+      "hematemesis",
+      "esophagus",
+      "dysphagia",
+      "vomiting",
+      "bloody"
+    ],
+    "primary_dx": "dysphagia hematemesis",
+    "input_path": "prepared/81_dysphagia_hematemesis.input.txt"
+  },
+  "82": {
+    "slug": "blood_in_urine_er_visit",
+    "gold_terms": [
+      "blood in urine",
+      "metastatic disease",
+      "prostate cancer",
+      "urinary obstruction",
+      "foley catheter",
+      "blood",
+      "hematuria",
+      "prostate",
+      "metastatic",
+      "disease",
+      "bladder",
+      "drink",
+      "emergency",
+      "urine"
+    ],
+    "primary_dx": "blood in urine",
+    "input_path": "prepared/82_blood_in_urine_er_visit.input.txt"
+  },
+  "83": {
+    "slug": "er_report_stomach_pain",
+    "gold_terms": [
+      "er report stomach pain",
+      "stomach pain",
+      "crampy",
+      "mid-epigastric",
+      "upper quadrant",
+      "appetite",
+      "emesis",
+      "multilobular",
+      "liver parenchyma",
+      "mid epigastric",
+      "epigastric",
+      "lymphadenopathy",
+      "neurological",
+      "stomach",
+      "quadrant",
+      "abdominal",
+      "liver"
+    ],
+    "primary_dx": "er report stomach pain",
+    "input_path": "prepared/83_er_report_stomach_pain.input.txt"
+  },
+  "84": {
+    "slug": "breast_calcifications_preop_consult",
+    "gold_terms": [
+      "breast calcifications preop",
+      "breast mound",
+      "stereotactic core needle biopsy",
+      "gastroesophageal reflux",
+      "needle biopsy",
+      "calcifications",
+      "biopsy",
+      "breast",
+      "stereotactic"
+    ],
+    "primary_dx": "breast calcifications preop",
+    "input_path": "prepared/84_breast_calcifications_preop_consult.input.txt"
+  },
+  "85": {
+    "slug": "lower_quadrant_pain",
+    "gold_terms": [
+      "lower quadrant pain",
+      "right lower quadrant pain",
+      "white blood cell count",
+      "lower quadrant",
+      "bilirubin",
+      "quadrant"
+    ],
+    "primary_dx": "lower quadrant pain",
+    "input_path": "prepared/85_lower_quadrant_pain.input.txt"
+  },
+  "86": {
+    "slug": "burn_consult",
+    "gold_terms": [
+      "burn",
+      "workers' compensation industrial injury",
+      "workers' compensation",
+      "degree"
+    ],
+    "primary_dx": "burn",
+    "input_path": "prepared/86_burn_consult.input.txt"
+  },
+  "87": {
+    "slug": "rectal_bleeding_consult",
+    "gold_terms": [
+      "stomach discomfort",
+      "colitis",
+      "sepsis",
+      "hernia repair",
+      "rectal bleeding",
+      "hernia",
+      "diarrhea",
+      "stomach"
+    ],
+    "primary_dx": "stomach discomfort",
+    "input_path": "prepared/87_rectal_bleeding_consult.input.txt"
+  },
+  "88": {
+    "slug": "arm_pain_neuro_consult",
+    "gold_terms": [
+      "arm pain neuro",
+      "arm pain",
+      "deep tendon reflexes",
+      "arm",
+      "mri",
+      "spine",
+      "neurological",
+      "nerves",
+      "reflexes",
+      "hand",
+      "sensation",
+      "fingers",
+      "neck"
+    ],
+    "primary_dx": "arm pain neuro",
+    "input_path": "prepared/88_arm_pain_neuro_consult.input.txt"
+  },
+  "89": {
+    "slug": "buttock_abscess",
+    "gold_terms": [
+      "buttock abscess",
+      "buttock pain",
+      "pimple",
+      "incision and drainage",
+      "local wound care",
+      "blood sugars",
+      "diabetes",
+      "buttock",
+      "abscess"
+    ],
+    "primary_dx": "buttock abscess",
+    "input_path": "prepared/89_buttock_abscess.input.txt"
+  },
+  "90": {
+    "slug": "care_conference_with_family",
+    "gold_terms": [
+      "care conference with family",
+      "full code status",
+      "terminal wean",
+      "comfort care",
+      "cpr",
+      "advanced cardiac life support",
+      "care conference",
+      "family",
+      "bedside"
+    ],
+    "primary_dx": "care conference with family",
+    "input_path": "prepared/90_care_conference_with_family.input.txt"
+  },
+  "91": {
+    "slug": "dizziness_recurrent",
+    "gold_terms": [
+      "dizziness recurrent",
+      "recurrent dizziness",
+      "shortness of breath",
+      "rotational sensation",
+      "earache",
+      "headaches",
+      "extremity",
+      "sensation",
+      "numbness",
+      "dizziness",
+      "pains"
+    ],
+    "primary_dx": "dizziness recurrent",
+    "input_path": "prepared/91_dizziness_recurrent.input.txt"
+  },
+  "92": {
+    "slug": "chest_wall_lump_consult",
+    "gold_terms": [
+      "chest wall lump",
+      "ct of the chest",
+      "chest wall",
+      "chest",
+      "tenderness",
+      "axillae",
+      "hypertension",
+      "respiratory",
+      "abdominal",
+      "bruits",
+      "lump",
+      "masses"
+    ],
+    "primary_dx": "chest wall lump",
+    "input_path": "prepared/92_chest_wall_lump_consult.input.txt"
+  },
+  "93": {
+    "slug": "consult_coronary_artery_disease",
+    "gold_terms": [
+      "coronary artery disease",
+      "cad",
+      "hypertension",
+      "diabetes mellitus",
+      "cholesterol",
+      "bypass",
+      "prior bypass surgery",
+      "urinary tract infection",
+      "fatigue and tiredness",
+      "shortness of breath",
+      "elevated psa",
+      "surgery",
+      "artery",
+      "cardiac",
+      "infection",
+      "fever",
+      "coronary"
+    ],
+    "primary_dx": "coronary artery disease",
+    "input_path": "prepared/93_consult_coronary_artery_disease.input.txt"
+  },
+  "94": {
+    "slug": "neuro_consult_leg_weakness",
+    "gold_terms": [
+      "neuro  leg weakness",
+      "hyperckemia",
+      "emg and nerve",
+      "nerve conduction studies",
+      "leg weakness",
+      "leg",
+      "weakness",
+      "dorsiflexion",
+      "plantar",
+      "neuropathy",
+      "muscles"
+    ],
+    "primary_dx": "neuro  leg weakness",
+    "input_path": "prepared/94_neuro_consult_leg_weakness.input.txt"
+  },
+  "95": {
+    "slug": "consult_stasis_ulcer",
+    "gold_terms": [
+      "fevers",
+      "cellulitis",
+      "venous ulcers",
+      "bipedal edema",
+      "stasis ulcer",
+      "wound cultures",
+      "wound",
+      "ankle",
+      "ulcer",
+      "hypertension",
+      "ulcers",
+      "stasis",
+      "chronic"
+    ],
+    "primary_dx": "fevers",
+    "input_path": "prepared/95_consult_stasis_ulcer.input.txt"
+  },
+  "96": {
+    "slug": "cut_on_foot_er_visit",
+    "gold_terms": [
+      "foot pain",
+      "cut on foot",
+      "piece of glass",
+      "foreign body",
+      "active bleeding",
+      "foot",
+      "injuries",
+      "atraumatic",
+      "laceration",
+      "bleeding",
+      "body"
+    ],
+    "primary_dx": "foot pain",
+    "input_path": "prepared/96_cut_on_foot_er_visit.input.txt"
+  },
+  "97": {
+    "slug": "dental_pain",
+    "gold_terms": [
+      "dental pain",
+      "dental abscess",
+      "dental block",
+      "nerve block",
+      "mandible",
+      "swelling",
+      "dental"
+    ],
+    "primary_dx": "dental pain",
+    "input_path": "prepared/97_dental_pain.input.txt"
+  },
+  "98": {
+    "slug": "dental_pain_emergency_visit",
+    "gold_terms": [
+      "dental pain emergency visit",
+      "dental pain",
+      "jaw",
+      "bupivacaine",
+      "mandibular teeth",
+      "dental abscess",
+      "coronary artery",
+      "emergency department",
+      "tongue",
+      "dental"
+    ],
+    "primary_dx": "dental pain emergency visit",
+    "input_path": "prepared/98_dental_pain_emergency_visit.input.txt"
+  },
+  "99": {
+    "slug": "detox_from_heroin",
+    "gold_terms": [
+      "phenergan",
+      "detox from heroin",
+      "alcohol abuse",
+      "heroin abuse",
+      "detox",
+      "heroin",
+      "alcohol",
+      "cocaine",
+      "abuse"
+    ],
+    "primary_dx": "phenergan",
+    "input_path": "prepared/99_detox_from_heroin.input.txt"
+  },
+  "100": {
+    "slug": "disseminated_intravascular_coagulation",
+    "gold_terms": [
+      "intravascular",
+      "coagulation",
+      "pneumonia",
+      "thromboplastin time",
+      "prothrombin time",
+      "disseminated intravascular coagulation",
+      "streptococcal pneumonia",
+      "intravascular coagulation",
+      "infusion",
+      "coagulopathy",
+      "fibrinogen",
+      "respiratory",
+      "oropharynx",
+      "sepsis",
+      "disseminated"
+    ],
+    "primary_dx": "intravascular",
+    "input_path": "prepared/100_disseminated_intravascular_coagulation.input.txt"
+  },
+  "101": {
+    "slug": "er_report_rib_cage_pain",
+    "gold_terms": [
+      "er report rib cage pain",
+      "abdominal pain",
+      "unknown etiology",
+      "rib cage",
+      "emergency"
+    ],
+    "primary_dx": "er report rib cage pain",
+    "input_path": "prepared/101_er_report_rib_cage_pain.input.txt"
+  },
+  "102": {
+    "slug": "dog_bite",
+    "gold_terms": [
+      "dog bite",
+      "german shepherd",
+      "pulmonary fibrosis",
+      "lung transplant"
+    ],
+    "primary_dx": "dog bite",
+    "input_path": "prepared/102_dog_bite.input.txt"
+  },
+  "103": {
+    "slug": "hematuria_er_visit",
+    "gold_terms": [
+      "voiding",
+      "constipation",
+      "hematuria",
+      "foley catheter",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "urine culture",
+      "renal insufficiency",
+      "hypertension",
+      "high cholesterol"
+    ],
+    "primary_dx": "voiding",
+    "input_path": "prepared/103_hematuria_er_visit.input.txt"
+  },
+  "104": {
+    "slug": "er_report_uri",
+    "gold_terms": [
+      "er report uri",
+      "uri",
+      "emergency room",
+      "upper respiratory infection",
+      "respiratory",
+      "sick",
+      "fever",
+      "chest"
+    ],
+    "primary_dx": "er report uri",
+    "input_path": "prepared/104_er_report_uri.input.txt"
+  },
+  "105": {
+    "slug": "left_lower_quadrant_pain_er_visit",
+    "gold_terms": [
+      "left lower quadrant pain",
+      "bowel movement",
+      "constipation",
+      "fetal heart",
+      "nausea",
+      "vomiting",
+      "vaginal",
+      "fetal",
+      "gravida",
+      "bowel"
+    ],
+    "primary_dx": "left lower quadrant pain",
+    "input_path": "prepared/105_left_lower_quadrant_pain_er_visit.input.txt"
+  },
+  "106": {
+    "slug": "feeling_dizzy_er_visit",
+    "gold_terms": [
+      "feeling dizzy",
+      "hypertension",
+      "tachycardia",
+      "smoking",
+      "dizzy",
+      "heart rate",
+      "blood pressure",
+      "hypertensive",
+      "weakness",
+      "chest",
+      "diazepam",
+      "alcohol"
+    ],
+    "primary_dx": "feeling dizzy",
+    "input_path": "prepared/106_feeling_dizzy_er_visit.input.txt"
+  },
+  "107": {
+    "slug": "syncope_er_visit",
+    "gold_terms": [
+      "ejection fraction",
+      "coronary artery bypass grafting",
+      "coronary artery disease",
+      "v/q scan",
+      "bypass grafting",
+      "artery bypass",
+      "coronary artery",
+      "bypass",
+      "ivc",
+      "chronic",
+      "syncope",
+      "post",
+      "coronary"
+    ],
+    "primary_dx": "ejection fraction",
+    "input_path": "prepared/107_syncope_er_visit.input.txt"
+  },
+  "108": {
+    "slug": "syncope_er_visit_1",
+    "gold_terms": [
+      "syncope  1",
+      "residual deficit",
+      "headache",
+      "ct scan",
+      "syncopal episode",
+      "stress test",
+      "blood pressure",
+      "syncope"
+    ],
+    "primary_dx": "syncope  1",
+    "input_path": "prepared/108_syncope_er_visit_1.input.txt"
+  },
+  "109": {
+    "slug": "bilateral_hip_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "bilateral hip pain",
+      "femoroacetabular",
+      "impingement",
+      "hip"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/109_bilateral_hip_pain.input.txt"
+  },
+  "110": {
+    "slug": "foreign_body_fingernail",
+    "gold_terms": [
+      "foreign body fingernail",
+      "horse serum",
+      "wooden splinter",
+      "foreign body",
+      "nail plate",
+      "grasp",
+      "fingernail",
+      "splinter"
+    ],
+    "primary_dx": "foreign body fingernail",
+    "input_path": "prepared/110_foreign_body_fingernail.input.txt"
+  },
+  "111": {
+    "slug": "consult_jaw_pain",
+    "gold_terms": [
+      "consult - history and phy",
+      "jaw pain",
+      "mandible",
+      "numbness and tingling",
+      "teeth and tongue",
+      "nasal septum",
+      "tongue",
+      "numbness",
+      "jaw"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/111_consult_jaw_pain.input.txt"
+  },
+  "112": {
+    "slug": "foreign_body_right_nose",
+    "gold_terms": [
+      "foreign body right nose",
+      "belly",
+      "back pain",
+      "mild constipation",
+      "foul odor",
+      "purulent drainage",
+      "foreign body",
+      "nose"
+    ],
+    "primary_dx": "foreign body right nose",
+    "input_path": "prepared/112_foreign_body_right_nose.input.txt"
+  },
+  "113": {
+    "slug": "gen_med_consult_1",
+    "gold_terms": [
+      "gen med  1",
+      "return to work",
+      "fit for duty",
+      "cleared for work",
+      "muscular",
+      "paresthesias",
+      "shoulder",
+      "shoulder pain",
+      "strain",
+      "waist",
+      "x-rays",
+      "waist level",
+      "neurologic",
+      "abnormalities",
+      "impingement",
+      "examination"
+    ],
+    "primary_dx": "gen med  1",
+    "input_path": "prepared/113_gen_med_consult_1.input.txt"
+  },
+  "114": {
+    "slug": "hematuria_consult",
+    "gold_terms": [
+      "consult - history and phy",
+      "prostate cancer",
+      "bleeding",
+      "gross hematuria",
+      "speech impediment",
+      "hematuria",
+      "coagulopathy",
+      "blood"
+    ],
+    "primary_dx": "consult - history and phy",
+    "input_path": "prepared/114_hematuria_consult.input.txt"
+  },
+  "115": {
+    "slug": "gen_med_consult_10",
+    "gold_terms": [
+      "gen med  10",
+      "hemoglobin a1c",
+      "diarrhea",
+      "diabetes mellitus type ii",
+      "hypertension",
+      "hypercholesterolemia",
+      "hyperparathyroidism",
+      "osteoporosis",
+      "depression",
+      "polyuria or polydipsia",
+      "inflammatory arthritis",
+      "blood pressure",
+      "inflammatory",
+      "arthralgias",
+      "polyuria",
+      "polydipsia",
+      "extremities",
+      "joints",
+      "blood",
+      "diabetes"
+    ],
+    "primary_dx": "gen med  10",
+    "input_path": "prepared/115_gen_med_consult_10.input.txt"
+  },
+  "116": {
+    "slug": "weight_gain_and_edema",
+    "gold_terms": [
+      "weight gain and edema",
+      "consult - history and phy",
+      "hypothyroidism",
+      "edema",
+      "weight gain",
+      "fibromyalgia",
+      "inflammatory bowel disease",
+      "crohn disease",
+      "copd",
+      "thyroid disorder"
+    ],
+    "primary_dx": "weight gain and edema",
+    "input_path": "prepared/116_weight_gain_and_edema.input.txt"
+  },
+  "117": {
+    "slug": "gen_med_consult_11",
+    "gold_terms": [
+      "gen med  11",
+      "folliculitis",
+      "pelvic pain",
+      "mood swings",
+      "dyspareunia",
+      "infection",
+      "painful sex",
+      "psychiatric",
+      "swings",
+      "pelvic"
+    ],
+    "primary_dx": "gen med  11",
+    "input_path": "prepared/117_gen_med_consult_11.input.txt"
+  },
+  "118": {
+    "slug": "gen_med_consult_12",
+    "gold_terms": [
+      "gen med  12",
+      "history of diabetes",
+      "dyspnea on exertion",
+      "uncertain etiology",
+      "weak",
+      "syncope",
+      "presyncope",
+      "palpitations",
+      "coronary artery disease",
+      "weak and shaky",
+      "blood pressure",
+      "hemoptysis",
+      "hypertension",
+      "pressure",
+      "diabetes",
+      "shaky",
+      "dyspnea",
+      "disease"
+    ],
+    "primary_dx": "gen med  12",
+    "input_path": "prepared/118_gen_med_consult_12.input.txt"
+  },
+  "119": {
+    "slug": "gen_med_consult_14",
+    "gold_terms": [
+      "gen med  14",
+      "left otalgia",
+      "otalgia",
+      "serous otitis",
+      "atopic dermatitis",
+      "serous",
+      "otitis",
+      "atopic",
+      "dermatitis"
+    ],
+    "primary_dx": "gen med  14",
+    "input_path": "prepared/119_gen_med_consult_14.input.txt"
+  },
+  "120": {
+    "slug": "gen_med_consult_15",
+    "gold_terms": [
+      "gen med  15",
+      "tearfulness",
+      "mood swings",
+      "menopause",
+      "postsurgical menopause",
+      "mood swings and tearfulness",
+      "hormone replacement therapy",
+      "breast cancer",
+      "wellbutrin"
+    ],
+    "primary_dx": "gen med  15",
+    "input_path": "prepared/120_gen_med_consult_15.input.txt"
+  },
+  "121": {
+    "slug": "gen_med_consult_16",
+    "gold_terms": [
+      "gen med  16",
+      "short-term memory loss",
+      "anxiety",
+      "short term memory loss",
+      "memory loss",
+      "stress issues",
+      "situational",
+      "memory",
+      "stress"
+    ],
+    "primary_dx": "gen med  16",
+    "input_path": "prepared/121_gen_med_consult_16.input.txt"
+  },
+  "122": {
+    "slug": "gen_med_consult_17",
+    "gold_terms": [
+      "gen med  17",
+      "sinusitis",
+      "fever",
+      "intermittent fever",
+      "allergic rhinitis",
+      "fever history",
+      "teething"
+    ],
+    "primary_dx": "gen med  17",
+    "input_path": "prepared/122_gen_med_consult_17.input.txt"
+  },
+  "123": {
+    "slug": "gen_med_consult_2",
+    "gold_terms": [
+      "gen med  2",
+      "foreign body",
+      "anterior chambers",
+      "conjunctiva",
+      "lens",
+      "lids",
+      "blurriness",
+      "eye",
+      "lacrimal apparatus",
+      "metallic",
+      "pain",
+      "photophobia",
+      "sensation",
+      "slit lamp examination",
+      "smokes",
+      "social drinker",
+      "visual acuity",
+      "initial clinic visit",
+      "worker",
+      "foreign",
+      "body"
+    ],
+    "primary_dx": "gen med  2",
+    "input_path": "prepared/123_gen_med_consult_2.input.txt"
+  },
+  "124": {
+    "slug": "gen_med_consult_24",
+    "gold_terms": [
+      "gen med  24",
+      "castleman\u00e2\u0080\u0099s disease",
+      "chop chemotherapy",
+      "ventriculomegaly",
+      "excisional lymph node biopsy",
+      "excisional lymph node",
+      "excisional lymph",
+      "node biopsy",
+      "lymph node",
+      "neck",
+      "aids",
+      "chop",
+      "chemotherapy",
+      "node",
+      "headaches",
+      "lymphadenopathy"
+    ],
+    "primary_dx": "gen med  24",
+    "input_path": "prepared/124_gen_med_consult_24.input.txt"
+  },
+  "125": {
+    "slug": "gen_med_consult_25",
+    "gold_terms": [
+      "gen med  25",
+      "progressively worsening",
+      "anticoagulation",
+      "bilateral arthroscopic evaluation",
+      "lv size",
+      "worsening shortness of breath",
+      "shortness of breath",
+      "prior to admission",
+      "pleural effusion",
+      "mildly enlarged",
+      "atrial fibrillation",
+      "heart failure",
+      "atrial",
+      "regurgitation",
+      "lymphadenopathy",
+      "breath"
+    ],
+    "primary_dx": "gen med  25",
+    "input_path": "prepared/125_gen_med_consult_25.input.txt"
+  },
+  "126": {
+    "slug": "gen_med_consult_26",
+    "gold_terms": [
+      "gen med  26",
+      "abdominal pain",
+      "suprarenal mass",
+      "colon cancer",
+      "colonoscopy",
+      "abdominal",
+      "cancers"
+    ],
+    "primary_dx": "gen med  26",
+    "input_path": "prepared/126_gen_med_consult_26.input.txt"
+  },
+  "127": {
+    "slug": "gen_med_consult_27",
+    "gold_terms": [
+      "gen med  27",
+      "elevated white count",
+      "intractable diarrhea",
+      "hypokalemia",
+      "dnr status",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "fever",
+      "white blood cell count",
+      "admitted to the hospital",
+      "nausea vomiting diarrhea",
+      "diarrhea and fever",
+      "white blood cell",
+      "blood cell count",
+      "nausea vomiting",
+      "vomiting diarrhea",
+      "emergency department",
+      "diagnostic studies",
+      "white blood",
+      "blood cell",
+      "cell count",
+      "profound hypokalemia",
+      "febrile illness",
+      "clostridium difficile",
+      "clostridium",
+      "difficile",
+      "ceftriaxone",
+      "pneumonia",
+      "potassium",
+      "clindamycin",
+      "intractable",
+      "intravenous",
+      "illness"
+    ],
+    "primary_dx": "gen med  27",
+    "input_path": "prepared/127_gen_med_consult_27.input.txt"
+  },
+  "128": {
+    "slug": "gen_med_consult_28",
+    "gold_terms": [
+      "gen med  28",
+      "level of consciousness",
+      "parkinson disease",
+      "altered mental status",
+      "dehydration",
+      "elderly abuse",
+      "decreased level of consciousness",
+      "ems",
+      "parkinson",
+      "consciousness",
+      "xanax",
+      "sinemet",
+      "decreased"
+    ],
+    "primary_dx": "gen med  28",
+    "input_path": "prepared/128_gen_med_consult_28.input.txt"
+  },
+  "129": {
+    "slug": "gen_med_consult_29",
+    "gold_terms": [
+      "gen med  29",
+      "sinus rhythm",
+      "ekg",
+      "prolonged qt",
+      "platelet count",
+      "hematocrit",
+      "umbilical hernia",
+      "emergency department",
+      "healthy",
+      "incarcerated",
+      "intermittent"
+    ],
+    "primary_dx": "gen med  29",
+    "input_path": "prepared/129_gen_med_consult_29.input.txt"
+  },
+  "130": {
+    "slug": "gen_med_consult_3",
+    "gold_terms": [
+      "gen med  3",
+      "pathogen exposure",
+      "blood-borne",
+      "blood gas",
+      "contaminated",
+      "exposure",
+      "full duty work",
+      "nausea",
+      "needlestick",
+      "phlebotomist",
+      "viral illness",
+      "vomiting",
+      "blood borne",
+      "borne pathogen",
+      "hepatitis",
+      "blood"
+    ],
+    "primary_dx": "gen med  3",
+    "input_path": "prepared/130_gen_med_consult_3.input.txt"
+  },
+  "131": {
+    "slug": "gen_med_consult_30",
+    "gold_terms": [
+      "gen med  30",
+      "diabetic medication",
+      "diabetes",
+      "hypertension",
+      "hypoglycemia",
+      "renal insufficiency",
+      "diabetic nephropathy",
+      "dehydration",
+      "iv fluid",
+      "glucometer checks",
+      "decrease in mental alertness",
+      "blood pressure medication",
+      "mental alertness",
+      "blood pressure",
+      "diabetic",
+      "glucose",
+      "blood",
+      "pressure",
+      "medication",
+      "alertness"
+    ],
+    "primary_dx": "gen med  30",
+    "input_path": "prepared/131_gen_med_consult_30.input.txt"
+  },
+  "132": {
+    "slug": "gen_med_consult_31",
+    "gold_terms": [
+      "gen med  31",
+      "cerebrovascular accident",
+      "recurrent urinary tract infection",
+      "diabetes",
+      "hypoglycemia",
+      "neuropathy",
+      "hypothyroidism",
+      "hyperlipidemia",
+      "worse from her baseline",
+      "decreased level of consciousness",
+      "level of consciousness",
+      "urinary tract infection",
+      "decreased level",
+      "blood sugar",
+      "garbled speech",
+      "mental status",
+      "urinary tract",
+      "emergency department",
+      "decreased",
+      "confused",
+      "coumadin",
+      "blood",
+      "emergency",
+      "cultures",
+      "intake"
+    ],
+    "primary_dx": "gen med  31",
+    "input_path": "prepared/132_gen_med_consult_31.input.txt"
+  },
+  "133": {
+    "slug": "gen_med_consult_34",
+    "gold_terms": [
+      "gen med  34",
+      "chronic abdominal",
+      "evaluation",
+      "chronic",
+      "epigastric",
+      "bowel",
+      "abdomen",
+      "abdominal"
+    ],
+    "primary_dx": "gen med  34",
+    "input_path": "prepared/133_gen_med_consult_34.input.txt"
+  },
+  "134": {
+    "slug": "gen_med_consult_35",
+    "gold_terms": [
+      "gen med  35",
+      "fluticasone nasal inhaler",
+      "confusion and hallucinations",
+      "blood pressure",
+      "temperature",
+      "abdomen",
+      "confusion",
+      "hallucinations"
+    ],
+    "primary_dx": "gen med  35",
+    "input_path": "prepared/134_gen_med_consult_35.input.txt"
+  },
+  "135": {
+    "slug": "gen_med_consult_36",
+    "gold_terms": [
+      "gen med  36",
+      "decreased range of motion",
+      "coughing up blood",
+      "chest",
+      "interstitial",
+      "infiltrates",
+      "bilateral"
+    ],
+    "primary_dx": "gen med  36",
+    "input_path": "prepared/135_gen_med_consult_36.input.txt"
+  },
+  "136": {
+    "slug": "gen_med_consult_37",
+    "gold_terms": [
+      "gen med  37",
+      "liver biopsy",
+      "dark urine",
+      "generalized weakness",
+      "lymph nodes",
+      "granulomatous",
+      "pancreatic",
+      "heterogenous",
+      "abnormalities",
+      "jaundice",
+      "node",
+      "biopsy",
+      "lymphadenopathy"
+    ],
+    "primary_dx": "gen med  37",
+    "input_path": "prepared/136_gen_med_consult_37.input.txt"
+  },
+  "137": {
+    "slug": "gen_med_consult_38",
+    "gold_terms": [
+      "gen med  38",
+      "abdominal pain",
+      "nausea",
+      "vomiting",
+      "peritoneal dialysis",
+      "cadaveric transplant",
+      "distended bowel",
+      "nodular",
+      "abdomen"
+    ],
+    "primary_dx": "gen med  38",
+    "input_path": "prepared/137_gen_med_consult_38.input.txt"
+  },
+  "138": {
+    "slug": "gen_med_consult_39",
+    "gold_terms": [
+      "gen med  39",
+      "abdominal pain",
+      "nausea",
+      "vomiting",
+      "fever",
+      "altered mental status",
+      "nausea vomiting",
+      "allergic rhinitis",
+      "dental extraction",
+      "venous obstruction",
+      "mental status",
+      "bowel loops",
+      "mucosal thickening",
+      "orthostatics",
+      "abdominal"
+    ],
+    "primary_dx": "gen med  39",
+    "input_path": "prepared/138_gen_med_consult_39.input.txt"
+  },
+  "139": {
+    "slug": "gen_med_consult_4",
+    "gold_terms": [
+      "gen med  4",
+      "chief complaint",
+      "brief history of present illness",
+      "jaw pain",
+      "physical examination",
+      "neck area",
+      "sinus rhythm",
+      "within normal limits",
+      "coronary artery disease",
+      "blood pressure",
+      "heart",
+      "pressure",
+      "jaw",
+      "disease",
+      "chest"
+    ],
+    "primary_dx": "gen med  4",
+    "input_path": "prepared/139_gen_med_consult_4.input.txt"
+  },
+  "140": {
+    "slug": "gen_med_consult_40",
+    "gold_terms": [
+      "gen med  40",
+      "altered mental status",
+      "stroke",
+      "atrial fibrillation",
+      "hypertension",
+      "hyperlipidemia",
+      "hyperglycemia",
+      "fasting lipid profile",
+      "fasting lipid",
+      "lipid profile",
+      "renal insufficiency",
+      "head ct",
+      "illness",
+      "insufficiency"
+    ],
+    "primary_dx": "gen med  40",
+    "input_path": "prepared/140_gen_med_consult_40.input.txt"
+  },
+  "141": {
+    "slug": "gen_med_consult_43",
+    "gold_terms": [
+      "gen med  43",
+      "arterial thrombosis",
+      "valvular heart disease",
+      "atherosclerotic heart disease",
+      "type ii diabetes",
+      "hypertension",
+      "carotid stenosis",
+      "heart disease",
+      "diabetes",
+      "carotid",
+      "stenosis",
+      "bypass",
+      "amputation",
+      "heart",
+      "atherosclerotic"
+    ],
+    "primary_dx": "gen med  43",
+    "input_path": "prepared/141_gen_med_consult_43.input.txt"
+  },
+  "142": {
+    "slug": "gen_med_consult_46",
+    "gold_terms": [
+      "gen med  46",
+      "anasarca",
+      "anemia",
+      "diarrhea",
+      "crampy",
+      "enteropathy",
+      "malnutrition",
+      "lower extremity edema",
+      "folic acid",
+      "crohn disease",
+      "pneumonia"
+    ],
+    "primary_dx": "gen med  46",
+    "input_path": "prepared/142_gen_med_consult_46.input.txt"
+  },
+  "143": {
+    "slug": "gen_med_consult_47",
+    "gold_terms": [
+      "gen med  47",
+      "inflammatory",
+      "degenerative",
+      "fever",
+      "lumbar spine",
+      "sacroiliac joint",
+      "inguinal",
+      "sacroiliac",
+      "hip"
+    ],
+    "primary_dx": "gen med  47",
+    "input_path": "prepared/143_gen_med_consult_47.input.txt"
+  },
+  "144": {
+    "slug": "gen_med_consult_49",
+    "gold_terms": [
+      "gen med  49",
+      "hypertension",
+      "hypercholesterolemia",
+      "hyperlipidemia",
+      "pta",
+      "gouty attack",
+      "urinary tract infection",
+      "peripheral vascular disease",
+      "chronic kidney disease",
+      "diabetes mellitus",
+      "diabetic nephropathy",
+      "disease"
+    ],
+    "primary_dx": "gen med  49",
+    "input_path": "prepared/144_gen_med_consult_49.input.txt"
+  },
+  "145": {
+    "slug": "gen_med_consult_5",
+    "gold_terms": [
+      "gen med  5",
+      "swelling",
+      "iv hydration",
+      "osteoporosis",
+      "swelling of lips",
+      "allergic reaction",
+      "arthritis",
+      "difficulty swallowing",
+      "leucovorin",
+      "low-grade fever",
+      "methotrexate",
+      "respiratory infection",
+      "rheumatoid arthritis",
+      "flare of arthritis",
+      "rheumatoid",
+      "mucosa",
+      "dysphagia"
+    ],
+    "primary_dx": "gen med  5",
+    "input_path": "prepared/145_gen_med_consult_5.input.txt"
+  },
+  "146": {
+    "slug": "gen_med_consult_50",
+    "gold_terms": [
+      "gen med  50",
+      "leukocytosis",
+      "abdominal pain",
+      "lipase count",
+      "platelet count",
+      "potassium chloride",
+      "acute pancreatitis",
+      "vomiting",
+      "abdominal",
+      "dementia",
+      "amylase",
+      "lipase",
+      "pancreatitis",
+      "nausea"
+    ],
+    "primary_dx": "gen med  50",
+    "input_path": "prepared/146_gen_med_consult_50.input.txt"
+  },
+  "147": {
+    "slug": "gen_med_consult_51",
+    "gold_terms": [
+      "gen med  51",
+      "abdominal pain",
+      "nausea",
+      "vomiting",
+      "small bowel obstruction",
+      "nausea and vomiting",
+      "colon resection",
+      "allergic rhinitis",
+      "bowel obstruction",
+      "hypertension",
+      "glaucoma",
+      "benign",
+      "obstruction"
+    ],
+    "primary_dx": "gen med  51",
+    "input_path": "prepared/147_gen_med_consult_51.input.txt"
+  }
+}

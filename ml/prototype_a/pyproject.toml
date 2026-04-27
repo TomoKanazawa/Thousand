@@ -1,0 +1,19 @@
+[project]
+name = "prototype-a"
+version = "0.1.0"
+description = "Smallest useful test of LLM-based DDx ranking on MTSamples"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "requests>=2.32.0",
+    "beautifulsoup4>=4.12.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Scripts at root, no package layout — silence setuptools auto-discovery.
+py-modules = []

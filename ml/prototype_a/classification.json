@@ -1,0 +1,1178 @@
+{
+  "01": {
+    "slug": "abdominal_pain_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Abdominal pain (7-8 days duration)",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with subacute abdominal pain, focal LLQ tenderness with palpable mass, prior normal CT but persistent symptoms despite antibiotics, and rich clinical detail supporting multiple plausible diagnoses without explicit diagnosis stated."
+  },
+  "02": {
+    "slug": "consult_chest_pain",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Chest pain at night",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail with multiple plausible etiologies for nocturnal chest pain (cardiac, GI, musculoskeletal), but the patient's prior negative cardiac workup and symptom pattern (positional, relieved by standing) combined with concurrent GERD and epigastric pain somewhat anchor thinking toward benign causes, narrowing DDx slightly; additionally, the unfocused multi-system complaint list dilutes diagnostic reasoning."
+  },
+  "03": {
+    "slug": "consult_chest_pain_1",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Chest pain (pressure-type, precordial, intermittent over 3-4 days)",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with recurrent chest pain and dyspnea, prior cardiac workup, significant risk factors and family history, but current presentation with normal vitals, exam, EKG, and enzymes leaves multiple plausible diagnoses (ACS, coronary vasospasm, anxiety/stress-related, musculoskeletal, other cardiopulmonary etiologies) without explicit diagnosis stated."
+  },
+  "04": {
+    "slug": "consult_syncope",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Syncope",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "69-year-old with syncope and possible pre-syncope seizure activity; adequate HPI and workup support multiple plausible diagnoses (cardiac arrhythmia, vasovagal, neurologic, medication-related), though elevated ammonia and recent Parkinson's diagnosis hint at direction without stating final diagnosis."
+  },
+  "05": {
+    "slug": "consult_vomiting_nausea",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Vomiting and nausea",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart explicitly states metastatic breast cancer with known hepatosplenomegaly, renal failure, and chemotherapy as context for cytopenias, severely constraining differential and essentially pre-determining the diagnosis as cancer-related GI toxicity."
+  },
+  "06": {
+    "slug": "cough_abdominal_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Cough and right-sided abdominal pain for two days",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly patient with fever, dry cough, and pleuritic abdominal pain with clear exam findings (coarse basilar sounds, abdominal tenderness) but no stated diagnosis, allowing multiple reasonable differentials (pneumonia, pleurisy, musculoskeletal pain, intra-abdominal process) to be considered."
+  },
+  "07": {
+    "slug": "elbow_pain_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left elbow pain from trauma",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pediatric patient (17 years old) with obvious traumatic mechanism and imaging confirmation of fracture diagnosis, making this a procedural/management note rather than a diagnostic reasoning case."
+  },
+  "08": {
+    "slug": "er_report_chest_pain_fever",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Chest pain and fever",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Valid DDx case with adequate clinical detail, but the diagnosis list in the admission section and especially the discharge summary explicitly state the final working diagnosis (UTI with secondary fever, ACS ruled out), reducing diagnostic uncertainty."
+  },
+  "09": {
+    "slug": "gen_med_consult_52",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Chest pain",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Valid DDx case with plausible competing diagnoses (musculoskeletal, ACS, digoxin toxicity, pericarditis) but digoxin toxicity is strongly implied by the clinical narrative and labs, reducing diagnostic ambiguity slightly."
+  },
+  "10": {
+    "slug": "gen_med_consult_53",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Found down with diarrhea, respiratory failure, septic shock",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis explicitly stated in Assessment section (septicemia, septic shock, acute renal failure, respiratory failure); chart is a critical care summary note rather than an ambulatory diagnostic encounter requiring differential reasoning."
+  },
+  "100": {
+    "slug": "disseminated_intravascular_coagulation",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Respiratory failure secondary to pneumonia and sepsis",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is pediatric (20yo is borderline but chart context suggests acute critical illness rather than diagnostic reasoning exercise), and the clinical picture is presented as an established critical state (intubated, septic, with documented DIC) rather than an undifferentiated diagnostic encounter requiring DDx reasoning."
+  },
+  "101": {
+    "slug": "er_report_rib_cage_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Rib cage pain for several days",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is 25 years old but was seen at Children's Hospital as a secondary visitor accompanying his 3-month-old daughter, creating ambiguity about whether this is a legitimate ambulatory diagnostic encounter or an incidental evaluation."
+  },
+  "102": {
+    "slug": "dog_bite",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Dog bite to right lower leg",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pure trauma case with obvious mechanism (dog bite), clear wound description, and management-focused note; no diagnostic reasoning required as injury etiology is explicit."
+  },
+  "103": {
+    "slug": "hematuria_er_visit",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Hematuria",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and reasonable DDx (bladder cancer recurrence, UTI, trauma from catheterization, anticoagulation effect), but significant leak: history of bladder cancer is explicitly pre-stated, which heavily anchors diagnosis and limits true differential reasoning."
+  },
+  "104": {
+    "slug": "er_report_uri",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Cough, congestion, decreased appetite \u00d7 3-4 days in 2.5-month-old",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is pediatric (<18 years old), failing inclusion criterion for adult cases."
+  },
+  "105": {
+    "slug": "left_lower_quadrant_pain_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left lower quadrant pain with constipation, nausea/vomiting at 28 weeks pregnancy",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is pregnant (28 weeks); obstetric cases with acute symptoms in pregnancy require specialized obstetric DDx and clinical management that falls outside standard ambulatory differential diagnosis testing scope, and the clinical scenario is heavily influenced by pregnancy-specific pathophysiology."
+  },
+  "106": {
+    "slug": "feeling_dizzy_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Dizziness, tachycardia, and hypertension",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with multiple plausible etiologies for acute tachycardia/hypertension (alcohol withdrawal, hypertensive urgency, arrhythmia, thyrotoxicosis, infection) supported by detailed HPI, exam findings (telangiectasia, tympanitic chest), and labs; diagnosis not explicitly stated in body."
+  },
+  "107": {
+    "slug": "syncope_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Syncope",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "78-year-old with extensive cardiac history presenting with syncopal episode preceded by abdominal discomfort and diaphoresis; rich HPI and exam support multiple plausible diagnoses (vasovagal, cardiac arrhythmia, orthostatic hypotension, recurrent PE, acute coronary syndrome) without explicit diagnosis stated."
+  },
+  "108": {
+    "slug": "syncope_er_visit_1",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Syncope",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly patient with acute syncope, no diagnosis stated, sufficient clinical detail (HPI, vitals, exam, EKG) to generate multiple plausible DDx including vasovagal, medication effect, cardiac arrhythmia, or cerebrovascular etiology."
+  },
+  "109": {
+    "slug": "bilateral_hip_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Bilateral hip pain (right > left) with 2+ years duration, lateral and anterior/groin location, worse with walking",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Adult with chronic hip pain and detailed HPI/exam allowing reasonable DDx (FAI, labral pathology, OA, groin strain, iliopsoas syndrome), though imaging finding of possible exostosis somewhat narrows the differential."
+  },
+  "11": {
+    "slug": "gen_med_consult_54",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Left-sided chest pain with severe tightness",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Assessment explicitly states 'chest pains appear to be completely noncardiac' and attributes to psychosomatic cause, substantially narrowing the diagnostic reasoning expected from the test case."
+  },
+  "110": {
+    "slug": "foreign_body_fingernail",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Wooden splinter lodged beneath left fifth fingernail",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pure procedural/management note documenting splinter removal with no diagnostic reasoning required; chief complaint is a mechanical problem with obvious solution, not a medical diagnosis."
+  },
+  "111": {
+    "slug": "consult_jaw_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Recurrent jaw pain with numbness and tingling along jaw, teeth, and left lateral tongue for 2 months",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with focal neurologic symptoms (paresthesias, hypogeusia, decreased sensation on exam) and appropriate workup, multiple plausible etiologies including neuropathy, nerve entrapment, malignancy, and post-infectious causes without explicit diagnosis stated."
+  },
+  "112": {
+    "slug": "foreign_body_right_nose",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Questionable foreign body right nose, belly and back pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pediatric patient (2 years old) fails inclusion criteria; additionally, the foreign body was identified and removed during the visit, eliminating diagnostic uncertainty."
+  },
+  "113": {
+    "slug": "gen_med_consult_1",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "New onset right shoulder pain with mechanical mechanism (lifting/twisting)",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Clear mechanical injury with focal posterior/lateral shoulder tenderness and limited ROM, but imaging negative; reasonable DDx includes rotator cuff strain/tear, labral injury, subacromial impingement, and posterior capsule pathology without diagnosis explicitly stated."
+  },
+  "114": {
+    "slug": "hematuria_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Gross hematuria",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute hematuria and relevant past history of malignancy/coagulopathy allowing reasonable differential reasoning (UTI, prostate cancer recurrence, bladder pathology, coagulopathy recurrence, medication effect), though admission decision is stated, the initial diagnostic uncertainty is clinically meaningful."
+  },
+  "115": {
+    "slug": "gen_med_consult_10",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Polyarticular joint pain with decreased mobility",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "77-year-old with new-onset polyarticular pain, mild hand/wrist swelling, anemia, and borderline elevated calcium presenting a reasonable differential including rheumatologic disease, metabolic/endocrine etiologies, medication effects, and systemic illness without explicit diagnosis stated."
+  },
+  "116": {
+    "slug": "weight_gain_and_edema",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Weight gain (25 lbs), abdominal girth increase, and leg edema over weeks",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with detailed HPI and exam findings (edema, weight gain, vital signs) presenting with ambiguous constellation of symptoms allowing multiple plausible diagnoses (thyroid dysfunction, heart failure, renal/hepatic disease, medication effect, IBD-related) without diagnosis explicitly stated."
+  },
+  "117": {
+    "slug": "gen_med_consult_11",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Infection (folliculitis) with secondary complaints of pelvic pain, mood swings, and dyspareunia",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Solid ambulatory case with multiple overlapping complaints (skin, gynecologic, psychiatric) that could have various etiologies, but the pelvic pain component lacks sufficient detail and gynecologic exam findings to fully support differential reasoning."
+  },
+  "118": {
+    "slug": "gen_med_consult_12",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Weakness and shakiness with dyspnea on exertion",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly patient with classic exertional dyspnea, weakness, and nonspecific ECG changes in setting of significant cardiac history; multiple plausible etiologies (cardiac ischemia, heart failure, anemia, deconditioning, metabolic) without explicit diagnosis stated."
+  },
+  "119": {
+    "slug": "gen_med_consult_14",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Left otalgia and headache with hearing difficulty",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "49-year-old with three-week otalgia, conductive hearing loss, jaw pain, and sinus pressure; physical exam shows left TM effusion but constellation of symptoms (dental pain ruled out, prior sinusitis history, atopic dermatitis) supports multiple plausible etiologies without diagnosis explicitly stated."
+  },
+  "12": {
+    "slug": "gen_med_consult_7",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right-sided facial droop and weakness",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The diagnosis is explicitly stated in the HPI ('new-onset cerebrovascular accident') before clinical reasoning is required, eliminating the diagnostic challenge."
+  },
+  "120": {
+    "slug": "gen_med_consult_15",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Mood swings and tearfulness over several months with impaired work function",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with clear psychiatric presentation, good HPI with timeline and associated symptoms (insomnia, poor concentration), relevant negatives (no suicidality, no vasomotor symptoms despite surgical menopause), normal vital exam findings, and assessment removed to preserve diagnostic challenge."
+  },
+  "121": {
+    "slug": "gen_med_consult_16",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Short-term memory loss",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult ambulatory encounter with genuine diagnostic uncertainty regarding memory complaints; reasonable differential (stress/adjustment, medication effect, early cognitive decline, depression) supported by detailed HPI and normal focused exam without premature diagnostic closure."
+  },
+  "122": {
+    "slug": "gen_med_consult_17",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Fever \u00d7 5 days",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is 18 months old (pediatric, <18 years), which explicitly excludes this case per screening criteria."
+  },
+  "123": {
+    "slug": "gen_med_consult_2",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Foreign body sensation in left eye",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis is explicitly confirmed in the physical examination with direct visualization and removal of the foreign body, eliminating diagnostic uncertainty."
+  },
+  "124": {
+    "slug": "gen_med_consult_24",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Headache, neck pain, and lower back pain \u00d7 2-3 weeks",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Immunocompromised patient with subacute onset of headache, neck stiffness, papilledema, and imaging findings of hydrocephalus; multiple serious etiologies remain plausible (meningitis, CNS lymphoma, other opportunistic infections) without explicit diagnosis stated."
+  },
+  "125": {
+    "slug": "gen_med_consult_25",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Progressive dyspnea and exercise intolerance",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Comprehensive HPI and exam support multiple cardiac/pulmonary DDx, but echo findings (EF 20-24%, severe global hypokinesis) and medication regimen heavily pre-anchor to heart failure, limiting diagnostic reasoning."
+  },
+  "126": {
+    "slug": "gen_med_consult_26",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Abdominal pain and discomfort for 3 weeks",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Assessment section removed but imaging findings (suprarenal mass, intrahepatic lesion, lung nodules, IVC thrombus) combined with clinical features (hirsutism, family cancer history, genetic syndrome) point definitively toward adrenocortical carcinoma with metastases, eliminating meaningful diagnostic uncertainty."
+  },
+  "127": {
+    "slug": "gen_med_consult_27",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Nausea, vomiting, diarrhea, and fever in elderly woman on recent antibiotics",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Strong contextual clue (recent clindamycin use + intractable diarrhea) points heavily toward C. difficile, narrowing DDx, though chart otherwise has good detail and multiple plausible competing diagnoses (infectious gastroenteritis, medication adverse effect, metabolic derangement) remain reasonable."
+  },
+  "128": {
+    "slug": "gen_med_consult_28",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Decreased level of consciousness",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "85-year-old with acute altered mental status and multiple plausible etiologies (medication overdose, medication non-compliance, dehydration, infection, head trauma) supported by detailed HPI and exam findings; wife mentions overdose but causality remains clinically ambiguous given confounding factors."
+  },
+  "129": {
+    "slug": "gen_med_consult_29",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Severe abdominal pain and nausea",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis (incarcerated umbilical hernia) is explicitly stated in the HPI and the chart is a pre-operative admission note for definitive repair, making it a procedural/management case rather than a diagnostic encounter."
+  },
+  "13": {
+    "slug": "gen_med_h_p_1",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left leg pain with swelling",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The diagnosis (DVT) is explicitly stated in the HPI ('A Doppler ultrasound of her leg that was performed today noted a DVT'), eliminating diagnostic uncertainty and DDx reasoning."
+  },
+  "130": {
+    "slug": "gen_med_consult_3",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Blood-borne pathogen exposure (occupational needlestick injury)",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a post-exposure follow-up visit for a known occupational exposure with established source status (HCV+, HIV-); the acute symptoms (nausea/vomiting) appear incidental to the exposure workup rather than the diagnostic focus, and the chart functions as a surveillance/clearance visit rather than a diagnostic encounter."
+  },
+  "131": {
+    "slug": "gen_med_consult_30",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Mental status changes",
+    "leak_concern": "none",
+    "ddx_breadth": "moderate",
+    "reason": "Adult patient with altered mental status and multiple metabolic derangements (severe hypoglycemia, acute kidney injury, dehydration) creating reasonable diagnostic uncertainty despite some clinical clues pointing toward hypoglycemia."
+  },
+  "132": {
+    "slug": "gen_med_consult_31",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Altered mental status with confusion, garbled speech, and decreased consciousness over 3-4 days",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly patient with acute mental status change and multiple plausible etiologies (infection/UTI, hypoglycemia, medication effects, metabolic derangement, stroke progression) supported by detailed HPI, exam, and labs; diagnosis not stated; rich clinical context enables robust differential reasoning."
+  },
+  "133": {
+    "slug": "gen_med_consult_34",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Chronic abdominal pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Imaging findings (too numerous to count bilobar liver masses, extensive pancreatic/peripancreatic mass) essentially reveal the diagnosis, eliminating meaningful differential reasoning."
+  },
+  "134": {
+    "slug": "gen_med_consult_35",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Confusion and hallucinations \u00d7 5 days",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute psychiatric presentation, rich clinical detail including vital signs showing hypertension/tachycardia, systemic findings (bruits, acneiform rash, low-grade fever, night sweats), and constitutional symptoms that support broad differential including organic/systemic etiologies versus primary psychiatric illness."
+  },
+  "135": {
+    "slug": "gen_med_consult_36",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Hemoptysis and severe polyarthralgias",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with multisystem presentation (respiratory, rheumatologic, renal, ocular) spanning 2 months with detailed HPI and exam findings; renal biopsy result disclosed but clinical reasoning from presentation to diagnosis remains instructive and non-obvious."
+  },
+  "136": {
+    "slug": "gen_med_consult_37",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Dark urine, generalized weakness, and jaundice",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Rich clinical presentation with jaundice, hepatosplenomegaly, lymphadenopathy, constitutional symptoms, and lab-worthy findings supports multiple etiologies (hemolysis, viral hepatitis, autoimmune hepatitis, malignancy, infection) without diagnostic spoilage."
+  },
+  "137": {
+    "slug": "gen_med_consult_38",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Abdominal pain, nausea, and vomiting",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Rich clinical context with recent hospitalization for possible systemic infection (granulomatous disease, positive blood culture) creates reasonable DDx (bowel obstruction, infectious enteritis, medication side effect), but the assessment section\u2014which likely contains the diagnosis\u2014has been removed, preventing full evaluation of diagnostic bias."
+  },
+  "138": {
+    "slug": "gen_med_consult_39",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Fever, altered mental status, abdominal pain, nausea, vomiting with hypotension and shock",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Complex multi-system presentation (sepsis, altered mental status, DVT, adrenal abnormality, sinusitis) with detailed HPI, exam findings, and imaging/labs that support multiple diagnostic possibilities without explicit diagnosis statement in the chart body."
+  },
+  "139": {
+    "slug": "gen_med_consult_4",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Jaw pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart explicitly states admission reason ('admitted to rule out MI and coronary artery disease') and presents a preformed diagnostic hypothesis rather than an open clinical puzzle; the jaw pain is framed solely through cardiac lens with limited genuine differential exploration."
+  },
+  "14": {
+    "slug": "gen_med_h_p_2",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Weakness, malaise, and dyspnea on exertion \u00d7 1 month with weight loss",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with subacute constitutional symptoms, significant risk factors (MSM with Haiti travel history 1982), and multisystem findings (oral thrush, adenopathy, pulmonary infiltrates, elevated transaminases) that support multiple serious diagnoses without explicit statement of final diagnosis."
+  },
+  "140": {
+    "slug": "gen_med_consult_40",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Altered mental status with nonsensical speech",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "Clear presentation of acute altered mental status with speech abnormality in high-risk patient (AFib, HTN); stroke mentioned only as referring diagnosis (not confirmed), leaving room for multiple plausible etiologies including metabolic, infectious, psychiatric, and neurological causes."
+  },
+  "141": {
+    "slug": "gen_med_consult_43",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Post-operative management following CABG and aortic valve repair with multiple complications",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a post-operative management/rehabilitation note with all diagnoses explicitly listed in the final diagnosis section, functioning as a procedural summary rather than a diagnostic encounter requiring differential reasoning."
+  },
+  "142": {
+    "slug": "gen_med_consult_46",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Bilateral leg swelling",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The impression explicitly states the diagnoses (pneumonia, protein-losing enteropathy, anasarca, malnutrition), eliminating diagnostic uncertainty needed for a DDx test case."
+  },
+  "143": {
+    "slug": "gen_med_consult_47",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Fever, chills, and left pelvic/sacroiliac pain",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute fever and localized pelvic pain with swollen inguinal nodes; imaging unremarkable; multiple reasonable diagnoses (sacroiliitis, pelvic inflammatory disease, abscess, infectious/rheumatologic etiology) are plausible and assessment was removed to preserve diagnostic reasoning."
+  },
+  "144": {
+    "slug": "gen_med_consult_49",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Swelling and pain of right hand and left foot",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "ER diagnosis of gout is mentioned in HPI but the chart has sufficient clinical detail and comorbidities (CKD stage 4, diabetes, recent PTA, acute kidney injury picture) that create reasonable DDx considerations including cellulitis, acute kidney injury complications, vasculitis, and crystal arthropathy."
+  },
+  "145": {
+    "slug": "gen_med_consult_5",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Swelling of lips with difficulty swallowing",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Chart explicitly mentions 'questionable early Stevens-Johnson syndrome' in the Problems section, which substantially leaks the likely diagnosis and narrows the differential, though some diagnostic uncertainty remains."
+  },
+  "146": {
+    "slug": "gen_med_consult_50",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Abdominal pain, nausea, vomiting",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis of acute pancreatitis is explicitly stated in the HPI ('she is being admitted for management of acute pancreatitis'), eliminating diagnostic reasoning as a test case."
+  },
+  "147": {
+    "slug": "gen_med_consult_51",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Abdominal pain with nausea/vomiting and imaging findings of dilated bowel loops",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly male with acute lower abdominal pain, vomiting, dilated bowel on CT but no obvious obstruction\u2014creates genuine diagnostic ambiguity between recurrent SBO, ileus, early obstruction, gastroenteritis, mesenteric ischemia, or other acute abdominal processes despite significant history of prior obstructions."
+  },
+  "15": {
+    "slug": "gen_med_office_note_1",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Shortness of breath, mainly orthopneic since recent discharge",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Strong chronic disease context (CHF, AFib, hyperthyroidism) pre-stated limits DDx scope, but acute orthopnea presentation with examination findings allows reasonable differential reasoning despite known underlying conditions."
+  },
+  "16": {
+    "slug": "flank_pain_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Left flank pain and urinary retention",
+    "leak_concern": "none",
+    "ddx_breadth": "moderate",
+    "reason": "Adult with plausible multi-system presentation (flank pain, urinary symptoms, focal ileus, bacteriuria) without explicit diagnosis stated, requiring differential reasoning among renal/urologic/GI etiologies."
+  },
+  "17": {
+    "slug": "gen_med_progress_note_1",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Followup on diabetes mellitus, status post cerebrovascular accident",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart is a chronic disease management visit with pre-stated diagnoses (diabetes, prior CVA) and no acute diagnostic dilemma; the incidental right-sided discomfort is mentioned but already attributed to stroke sequelae without diagnostic ambiguity."
+  },
+  "18": {
+    "slug": "gen_med_progress_note_10",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Two-month follow-up visit with multiple concerns including exertional dyspnea, lightheadedness, and pre-operative optimization for knee replacement",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and reasonable DDx potential (cardiac vs. deconditioning vs. anemia), but this is a follow-up visit with pre-stated chronic conditions and the assessment section is removed, limiting diagnostic reasoning clarity."
+  },
+  "19": {
+    "slug": "gen_med_progress_note_2",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Followup on hypertension and hypercholesterolemia",
+    "leak_concern": "none",
+    "ddx_breadth": "narrow",
+    "reason": "This is a routine chronic disease management visit with no acute complaint or concerning findings to generate meaningful differential diagnosis reasoning."
+  },
+  "20": {
+    "slug": "gen_med_progress_note_3",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Followup on diabetes mellitus, hypercholesterolemia, and sinusitis",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chronic disease management visit with assessment removed; no acute diagnostic dilemma presented, and sinus findings are incidental rather than the focus of diagnostic reasoning."
+  },
+  "21": {
+    "slug": "flank_pain_consult_1",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left flank pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis (ureteral stone) is explicitly stated in the reason for consultation and imaging findings reported, eliminating the need for differential reasoning."
+  },
+  "22": {
+    "slug": "chest_pain_evaluation",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Chest pain and shortness of breath",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The consultation reason explicitly states 'rule out acute coronary syndrome' and diagnostic findings (elevated troponin, EKG changes, wall motion abnormality) essentially confirm ACS, eliminating meaningful differential diagnosis reasoning."
+  },
+  "23": {
+    "slug": "er_report_chest_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Chest pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The final diagnosis is explicitly stated at the end of the chart (assessment removed but clearly indicated), violating the core requirement that diagnosis not be revealed for DDx testing."
+  },
+  "24": {
+    "slug": "lightheaded_dizziness",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Lightheadedness, dizziness, and palpitations with sensation of racing heart",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with classic palpitation/presyncope presentation, normal current EKG and labs, but prior abnormal stress test creates genuine diagnostic uncertainty requiring consideration of arrhythmia, anxiety, anemia, thyroid disorder, and other systemic causes."
+  },
+  "25": {
+    "slug": "h_p_nausea_vomiting",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Intractable nausea and vomiting",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and multiple plausible etiologies (gastroparesis exacerbation, medication non-compliance, UTI/infection, electrolyte abnormality, hypertensive urgency, psychiatric), but pre-stated gastroparesis history and recent hospitalization for same complaint somewhat narrow the differential."
+  },
+  "26": {
+    "slug": "consult_rectal_bleeding",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Rectal bleeding and heartburn in setting of family history of colorectal cancer",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with multiple plausible diagnostic considerations (hemorrhoids, GERD, colorectal pathology including malignancy, esophageal pathology) supported by detailed HPI, exam, and social/family history without explicit diagnosis stated."
+  },
+  "27": {
+    "slug": "dysphagia_hematemesis",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Dysphagia and hematemesis",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute presentation of food impaction, hematemesis, and severe chest pain with imaging showing esophageal dilatation; multiple plausible diagnoses (Boerhaave syndrome, esophageal rupture, esophagitis, achalasia, esophageal malignancy) are supported by clinical context without explicit diagnosis stated."
+  },
+  "28": {
+    "slug": "er_report_stomach_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Epigastric and right upper quadrant abdominal pain for 2 weeks",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "CT imaging explicitly reveals a 6x6 cm mass at the hepatic hilum/caudate lobe with mass effect, which narrows differential diagnosis to a single pathology and removes diagnostic uncertainty."
+  },
+  "29": {
+    "slug": "lower_quadrant_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right lower quadrant pain with radiation to flank",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with classic RLQ pain presentation, positive peritoneal signs (Rovsing, obturator), fever, leukocytosis, and negative CT for appendicitis\u2014leaves multiple diagnostic possibilities (ovarian pathology, nephrolithiasis, gynecologic emergency, other intra-abdominal process) without diagnostic closure in the chart."
+  },
+  "30": {
+    "slug": "rectal_bleeding_consult",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "3 weeks of diarrhea with 1 week of rectal bleeding",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Diagnosis of colitis is explicitly stated in the problem list, significantly compromising the DDx utility, though the acute presentation with diarrhea, bleeding, and systemic signs could reasonably generate alternative considerations."
+  },
+  "31": {
+    "slug": "arm_pain_neuro_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right arm pain (dull upper outer arm and achy hand radiating to fingers) for ~1 year",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with subacute arm pain and long cervical spine history; detailed neuro exam (surprisingly normal despite imaging), PMHx, and medications support multiple DDx considerations (cervical radiculopathy, musculoskeletal, medication side effect, vascular) without explicit diagnosis stated."
+  },
+  "32": {
+    "slug": "dizziness_recurrent",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Recurrent dizziness x1 month",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Rich HPI with detailed positional/rotational characteristics, comprehensive exam findings, and multiple plausible etiologies (BPPV, medication effect, cardiac, stroke recurrence, anxiety) without explicit diagnosis stated in body."
+  },
+  "33": {
+    "slug": "neck_lower_back_pain_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Neck and lower back pain post-MVA",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pure trauma case with obvious mechanism (high-speed MVA with explicit causation); assessment section removed but clinical presentation is entirely explained by trauma history, leaving no genuine diagnostic uncertainty."
+  },
+  "34": {
+    "slug": "neuro_consult_leg_weakness",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right leg weakness \u00d7 6 months",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with insidious focal lower extremity weakness, hyperCKemia, elevated CK pattern with statin exposure, EMG/NCS already done, scant fasciculations, and mild atrophy permitting reasonable DDx between motor neuron disease, myopathy, neuropathy, and structural lesions without diagnosis stated in chart."
+  },
+  "35": {
+    "slug": "ankle_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Ankle pain after trauma",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is 17 years old (pediatric, <18yo), which violates GOOD/ACCEPTABLE criteria regardless of other chart quality."
+  },
+  "36": {
+    "slug": "h_p_weakness",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right-sided weakness and speech difficulties",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Acute focal neurologic deficits with multiple plausible etiologies (stroke, metabolic, infection, cardiac) supported by detailed HPI, exam, labs, and pending imaging without diagnostic disclosure."
+  },
+  "37": {
+    "slug": "dental_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Dental pain with left lower mandible swelling",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart describes a procedural/management note (nerve block placement with prescriptions) rather than a diagnostic encounter, and the clinical findings are too specific and exam-directed to support genuine differential reasoning."
+  },
+  "38": {
+    "slug": "dental_pain_emergency_visit",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Dental pain with left lower jaw fracture and possible abscess",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Strong clinical presentation with exam findings supporting fracture and localized infection, but the procedure note documents treatment decisions (nerve block, antibiotics) that slightly bias the diagnostic reasoning; DDx still viable between uncomplicated fracture, periapical abscess, and cellulitis."
+  },
+  "39": {
+    "slug": "er_report_rib_cage_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Rib cage pain for several days",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is 25 years old but presents to Children's Hospital as an adult escort; assessment section removed but history of recent Staph infection creates diagnostic anchoring and limits differential reasoning."
+  },
+  "40": {
+    "slug": "foot_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Foot pain after crush injury",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pediatric patient (17 years old) with obvious trauma mechanism and explicit diagnosis stated in discharge summary; fails age and diagnostic transparency criteria."
+  },
+  "41": {
+    "slug": "hematuria_er_visit",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Hematuria",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and reasonable DDx (bladder cancer recurrence, UTI, trauma from catheterization, anticoagulation effect), but history of bladder cancer as known PMH somewhat anchors thinking and Foley placement/CBI during ED visit represents procedural management that slightly muddies the pure diagnostic encounter."
+  },
+  "42": {
+    "slug": "left_lower_quadrant_pain_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left lower quadrant pain, constipation, nausea/vomiting at 28 weeks pregnancy",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pregnant patient with substance use disorder and sedated presentation creates unsafe DDx teaching case; diagnosis likely pre-determined by clinical context (constipation vs. obstruction vs. drug-seeking behavior) and assessment section removed, limiting open reasoning."
+  },
+  "43": {
+    "slug": "syncope_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Syncope",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "78-year-old with complex cardiac/vascular history presents with syncopal episode preceded by abdominal discomfort and diaphoresis; rich clinical detail supports multiple plausible etiologies (vasovagal, arrhythmia, PE recurrence, orthostatic hypotension, ACS, cerebrovascular) without explicit diagnosis stated."
+  },
+  "44": {
+    "slug": "syncope_er_visit_1",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Syncope",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Clear presentation of syncope with rich HPI, physical exam, and EKG findings supporting multiple plausible etiologies (vasovagal, orthostatic, cardiac arrhythmia, stroke) without explicit diagnosis stated."
+  },
+  "45": {
+    "slug": "testicular_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Testicular pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pediatric patient (4 years old) falls outside inclusion criteria (>18 years); clinical presentation and imaging findings strongly suggest testicular torsion with spontaneous resolution, leaving minimal diagnostic ambiguity."
+  },
+  "46": {
+    "slug": "ankle_pain_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right ankle pain after inversion injury",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is pediatric (<18yo, brought in by mother), and the obvious mechanism (twisted ankle) with negative exam and imaging leaves minimal diagnostic reasoning."
+  },
+  "47": {
+    "slug": "headache_emergency_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Headache",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Patient is 16 years old, below the adult threshold (>18) required for screening."
+  },
+  "48": {
+    "slug": "bilateral_hip_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Bilateral hip pain (right > left) with 2+ years progressive course, lateral and groin location, worse with activity",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with chronic progressive hip pain, multiple plausible etiologies (FAI, labral pathology, OA, muscle strain, referred pain), imaging suggestive but not diagnostic, adequate clinical detail for differential reasoning without explicit diagnosis stated."
+  },
+  "49": {
+    "slug": "consult_jaw_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Recurrent jaw pain with numbness and tingling along jaw, teeth, and tongue for 2 months",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with localized paresthesias and sensory changes; detailed neuro exam and ancillary findings support multiple plausible diagnoses (neuropathy, referred pain, malignancy, infectious etiology, medication effect) without diagnosis explicitly stated in the body."
+  },
+  "50": {
+    "slug": "consult_knee_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Left knee pain five days after third Synvisc injection",
+    "leak_concern": "none",
+    "ddx_breadth": "moderate",
+    "reason": "Adult patient with detailed orthopedic exam findings (medial joint line swelling/tenderness, McMurray click, patellar grind) and clear clinical context (post-injection state) allowing reasonable differential reasoning without explicit diagnosis stated."
+  },
+  "51": {
+    "slug": "ear_pain_drainage",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right ear pain with drainage",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Patient is 12 years old, below the adult threshold (>18) specified in screening criteria."
+  },
+  "52": {
+    "slug": "foot_pain_consultation",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Left foot pain following inversion injury during basketball",
+    "leak_concern": "none",
+    "ddx_breadth": "moderate",
+    "reason": "Clear mechanism and localized findings with imaging support multiple plausible diagnoses (midfoot sprains, calcaneocuboid joint injury, talonavicular joint pathology, possible occult fracture), diagnosis not explicitly stated, sufficient clinical detail for reasoning."
+  },
+  "53": {
+    "slug": "hand_pain_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right hand pain after punching wall",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Explicit diagnosis of CMC dislocations and metacarpal fractures stated in imaging findings section eliminates diagnostic uncertainty."
+  },
+  "54": {
+    "slug": "hematuria_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Gross hematuria",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute gross hematuria and significant past history (prostate cancer, prior coagulopathy/malignancy) creating multiple plausible diagnostic pathways (recurrent UTI, malignancy recurrence, medication effect, coagulopathy relapse, urologic source), though the past history provides helpful context without explicitly stating the current diagnosis."
+  },
+  "55": {
+    "slug": "lower_back_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Continued lower back pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart is primarily a counseling/management note focused on opioid prescribing limits and pain clinic referral rather than diagnostic reasoning; the underlying cause of acute back pain exacerbation is never diagnostically explored."
+  },
+  "56": {
+    "slug": "neck_back_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Neck pain, thoracic pain, and low back pain with bilateral lower extremity pain",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with multi-site pain and detailed HPI/exam allowing consideration of cervical stenosis, thoracic facet syndrome, lumbar stenosis, myofascial pain, costochondritis, and other etiologies without explicit diagnosis stated in chart body."
+  },
+  "57": {
+    "slug": "psych_consult_pain_meds",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Management of pain medications",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a management/medication adjustment note for a known critically ill post-MI patient with established diagnoses (acute MI, cardiogenic shock, ESRD, respiratory failure), not a diagnostic encounter with unclear etiology requiring differential reasoning."
+  },
+  "58": {
+    "slug": "shoulder_pain_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right shoulder pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis (right shoulder impingement) is explicitly stated in the Clinical Impression section, eliminating the diagnostic reasoning challenge required for a DDx test case."
+  },
+  "59": {
+    "slug": "weight_gain_and_edema",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Weight gain (25 lbs) and lower extremity edema over several weeks",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with detailed HPI, relevant PMHx, physical exam findings, and labs supporting multiple diagnostic considerations (thyroid dysfunction, heart failure, renal disease, medication effects, IBD-related complications) without explicit diagnosis stated."
+  },
+  "60": {
+    "slug": "wrist_pain",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Left wrist pain (acute on chronic)",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and exam support multiple diagnoses (ulnar styloid injury, lunotriquetral pathology, ECU pathology), but the likely diagnosis (ulnar styloid nonunion/injury with fibrous union) is strongly suggested in the imaging interpretation and plan, reducing genuine diagnostic uncertainty."
+  },
+  "61": {
+    "slug": "hip_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Left hip pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis (AVN with severe degenerative changes) is explicitly stated in imaging results and prior workup; this is a second opinion/management planning visit rather than a diagnostic encounter."
+  },
+  "62": {
+    "slug": "leg_pain_progress_note",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Low back and right thigh pain with recurrence after prior lumbar surgery",
+    "leak_concern": "minor",
+    "ddx_breadth": "moderate",
+    "reason": "Good clinical detail and multiple plausible etiologies (recurrent disc disease, facet arthropathy, stenosis, post-surgical changes) but the assessment section was removed, preventing verification of whether diagnosis was explicitly stated."
+  },
+  "63": {
+    "slug": "leg_pain_bone_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Leg pain at night and upon rising, radiating from buttocks to legs/ankles",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with detailed HPI describing neuropathic-pattern leg pain with constitutional symptoms and medication changes; no diagnosis stated; multiple plausible etiologies (statin myopathy, diabetic neuropathy, lumbar radiculopathy, vasculitis, infection) warrant differential reasoning."
+  },
+  "64": {
+    "slug": "lower_extremity_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right lower extremity pain and back pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Assessment section removed but chart is a post-operative spine follow-up note with imaging already interpreted and management plan (nerve block to assess TLIF candidacy) already determined, making it a procedural/management note rather than an open diagnostic encounter."
+  },
+  "65": {
+    "slug": "itchy_rash_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Acute itchy rash on torso and arms",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute onset generalized rash, detailed history and thorough exam findings, multiple plausible etiologies (urticaria, drug reaction, contact dermatitis, viral exanthem, scabies), no diagnosis stated in body."
+  },
+  "66": {
+    "slug": "jaw_pain_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Jaw pain radiating from left lower tooth toward left ear",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with localized jaw/tooth pain and clear exam findings (dental fracture) but multiple reasonable diagnoses remain viable (odontogenic pain, TMJ dysfunction, referred cardiac/vascular pain, trigeminal neuralgia) without explicit diagnostic statement, providing good differential reasoning opportunity."
+  },
+  "67": {
+    "slug": "nausea_er_visit",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Nausea and feeling faint",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "74-year-old with vague presentation of nausea and presyncope with multiple abnormal labs (anemia, hyponatremia, hypocalcemia, hypoalbuminemia) and clinical findings (tachycardia, tachypnea) supporting multiple plausible diagnoses without explicit stated diagnosis."
+  },
+  "68": {
+    "slug": "nausea_vomiting_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Intractable nausea and vomiting with hematemesis in early pregnancy",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Assessment section removed but clinical course and management (antibiotics for UTI, IV hydration, antiemetics) strongly imply hyperemesis gravidarum as the diagnosis, collapsing differential reasoning."
+  },
+  "69": {
+    "slug": "pain_from_hernia_er_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Multiple complaints: hernia pain, possible hematochezia, nausea/vomiting, left lower extremity pain",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with complex multi-system presentation (GI, vascular, neurologic symptoms) in high-risk patient; multiple plausible diagnoses reasonable without explicit diagnosis stated; sufficient clinical detail for reasoning."
+  },
+  "70": {
+    "slug": "air_under_diaphragm_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Possible free air under the diaphragm",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart explicitly states the diagnosis in the body (colonic air anterior superior to diaphragm dome) before any assessment section, eliminating diagnostic uncertainty."
+  },
+  "71": {
+    "slug": "annual_health_maintenance_exam",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Annual health maintenance examination",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a routine preventive health maintenance visit with no acute complaint or diagnostic dilemma; the assessment section (which would reveal the final diagnosis) has been removed, but the chart itself contains no clinical mystery to reason through."
+  },
+  "72": {
+    "slug": "chest_pain_evaluation",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Chest pain and shortness of breath",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The reason for consultation explicitly states 'rule out acute coronary syndrome' and the diagnostic workup (EKG with ST-depression, elevated troponin, wall motion abnormality on echo) conclusively establishes the diagnosis, leaving no meaningful differential to reason through."
+  },
+  "73": {
+    "slug": "ant_bait_exposure_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Possible exposure to ant bait (Borax)",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pediatric patient (14 months old) presenting for toxicology screening rather than diagnostic uncertainty, fails age criterion."
+  },
+  "74": {
+    "slug": "er_report_chest_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "chest pain",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The final diagnosis is explicitly stated in the assessment section (removed in transcription but referenced as present in the chart), which defeats the purpose of a DDx test case."
+  },
+  "75": {
+    "slug": "antibiotic_management_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Right foot ulcer with possible osteomyelitis",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "The diagnosis of osteomyelitis is explicitly stated in the consult reason and repeatedly asserted in the clinical assessment ('leads to the clinical diagnosis of osteomyelitis'), eliminating meaningful diagnostic reasoning."
+  },
+  "76": {
+    "slug": "lightheaded_dizziness",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Lightheadedness, dizziness, palpitations, and presyncope",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with classic presyncope and palpitation presentation; normal EKG and negative cardiac enzymes rule out acute MI but leave multiple plausible etiologies (arrhythmia, vasovagal, anxiety/panic, anemia, thyroid dysfunction, orthostasis) without explicit diagnosis stated in the body of the note."
+  },
+  "77": {
+    "slug": "antibiotic_therapy_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Possible lower extremity cellulitis in patient with chronic lymphedema",
+    "leak_concern": "none",
+    "ddx_breadth": "moderate",
+    "reason": "Adult patient with clear HPI, detailed exam, and labs supporting differential between cellulitis versus stasis dermatitis/lymphedema without explicit diagnosis stated, making this an appropriate DDx test case."
+  },
+  "78": {
+    "slug": "asbestos_exposure_hemoptysis",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Hemoptysis",
+    "leak_concern": "none",
+    "ddx_breadx": "broad",
+    "reason": "Adult with hemoptysis and rich clinical context (cardiac history, anticoagulation, asbestos exposure, exam findings, labs, imaging) allowing multiple plausible diagnoses without explicit statement of final diagnosis."
+  },
+  "79": {
+    "slug": "consult_rectal_bleeding",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Rectal bleeding and heartburn with family history of colon cancer",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult patient with multiple plausible etiologies for rectal bleeding (hemorrhoids vs. colonic/esophageal malignancy vs. other GI pathology) and heartburn (GERD vs. PUD vs. malignancy), supported by detailed HPI, exam, and risk factors, without diagnostic conclusion stated."
+  },
+  "80": {
+    "slug": "blood_in_toilet",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Blood in toilet",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Elderly patient with hematuria or rectal bleeding of unclear source; extensive workup (CT, labs, exam) is negative or inconclusive, leaving multiple plausible diagnoses (UTI, hemorrhoids, diverticulosis, bladder/urethral source, vaginal source) and no explicit diagnosis stated."
+  },
+  "81": {
+    "slug": "dysphagia_hematemesis",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Dysphagia and hematemesis while vomiting",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Complex presentation with acute esophageal dysphagia and hematemesis in patient with significant comorbidities (HIV, HBV, compensated heart failure); imaging shows esophageal dilatation with food impaction but multiple etiologies remain plausible (Boerhaave, esophageal spasm, achalasia, esophageal varices, esophagitis, food impaction with perforation risk) without explicit diagnosis stated."
+  },
+  "82": {
+    "slug": "blood_in_urine_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Gross hematuria",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart explicitly states known metastatic prostate cancer with bladder involvement as the underlying etiology, making this a management case for a known diagnosis rather than a diagnostic workup."
+  },
+  "83": {
+    "slug": "er_report_stomach_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Epigastric and right upper quadrant abdominal pain for 2 weeks",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "CT imaging explicitly identifies a 6x6 cm multilobular hypodense mass at the hepatic hilum, which essentially reveals the diagnosis and collapses differential reasoning."
+  },
+  "84": {
+    "slug": "breast_calcifications_preop_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Preoperative evaluation for excisional breast biopsy",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a procedural/management note documenting planned surgical intervention for a known lesion rather than a diagnostic encounter presenting with ambiguous findings."
+  },
+  "85": {
+    "slug": "lower_quadrant_pain",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right lower quadrant pain with radiation to flank",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with acute RLQ pain, positive peritoneal signs, fever, elevated WBC, and negative CT appendicitis allowing multiple diagnostic possibilities including gynecologic, urologic, and musculoskeletal etiologies without explicit diagnosis stated."
+  },
+  "86": {
+    "slug": "burn_consult",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Burn, right arm",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pure trauma case with obvious mechanism (hot oil splash); diagnosis is explicit in chief complaint and mechanism; no diagnostic reasoning required."
+  },
+  "87": {
+    "slug": "rectal_bleeding_consult",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "3 weeks diarrhea and 1 week rectal bleeding",
+    "leak_concern": "major",
+    "ddx_breadth": "moderate",
+    "reason": "Problem list explicitly states 'Colitis' and 'Sepsis' as diagnoses rather than differential considerations, substantially limiting the reasoning challenge despite reasonable clinical detail and plausible alternative etiologies (infectious gastroenteritis, IBD, diverticulosis, medication side effects)."
+  },
+  "88": {
+    "slug": "arm_pain_neuro_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right arm pain (dull upper outer arm and achy hand radiating to fingers) for nearly one year",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "58-year-old with subacute arm pain and prior cervical degenerative changes presents with sufficient clinical detail (HPI, comprehensive neuro exam, imaging history) to generate multiple plausible diagnoses (cervical radiculopathy, peripheral nerve compression, musculoskeletal pain, referred pain from other sources) without explicit diagnosis stated."
+  },
+  "89": {
+    "slug": "buttock_abscess",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Buttock abscess",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Diagnosis is explicitly stated in chief complaint and confirmed by documented I&D procedure, making this a post-procedural management note rather than a diagnostic encounter."
+  },
+  "90": {
+    "slug": "care_conference_with_family",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Catastrophic event with cardiopulmonary arrest; end-of-life care transition",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "This is a palliative/end-of-life management note documenting terminal wean and comfort care decisions, not a diagnostic encounter with differential diagnosis reasoning."
+  },
+  "91": {
+    "slug": "dizziness_recurrent",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Recurrent dizziness for one month",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Rich HPI with positional/rotational vertigo features, extensive exam findings, and multiple comorbidities supporting diverse DDx (BPPV, CNS event, cardiac, medication effect, anxiety) without diagnostic conclusion stated."
+  },
+  "92": {
+    "slug": "chest_wall_lump_consult",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Enlarging, tender chest wall lump over 1 year",
+    "leak_concern": "minor",
+    "ddx_breadth": "broad",
+    "reason": "Adult with well-documented chest wall mass and imaging suggesting osseous origin, supporting multiple plausible diagnoses (osteochondroma, chondrosarcoma, osteosarcoma, fibrous dysplasia, hemangioma) without diagnosis explicitly stated in the presented chart sections."
+  },
+  "93": {
+    "slug": "consult_coronary_artery_disease",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Fever (admitted for management); cardiac consultation for known CAD and prior bypass",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Consultation reason explicitly states 'Coronary artery disease (CAD), prior bypass surgery' which is the known diagnosis, not the acute diagnostic problem; fever etiology is mentioned but not the focus of this cardiac consult note."
+  },
+  "94": {
+    "slug": "neuro_consult_leg_weakness",
+    "verdict": "GOOD",
+    "primary_chief_complaint": "Right leg weakness for 6 months",
+    "leak_concern": "none",
+    "ddx_breadth": "broad",
+    "reason": "Adult with subacute focal lower extremity weakness, elevated CK, EMG/NCS performed, physical exam with specific motor deficits and atrophy; multiple plausible diagnoses (motor neuron disease, inherited myopathy, radiculopathy, medication-related myopathy) remain reasonable without explicit diagnosis stated."
+  },
+  "95": {
+    "slug": "consult_stasis_ulcer",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Nonhealing right ankle stasis ulcer with low-grade fever",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart explicitly states the consult reason as 'nonhealing right ankle stasis ulcer' with known chronic venous insufficiency and scheduled vascular surgery, leaving minimal diagnostic uncertainty; this is a pre-planned surgical admission rather than an acute diagnostic encounter."
+  },
+  "96": {
+    "slug": "cut_on_foot_er_visit",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Cut on foot from glass",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Pure trauma case with obvious mechanism (glass laceration) and straightforward management note; no diagnostic reasoning required."
+  },
+  "97": {
+    "slug": "dental_pain",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Dental pain with left mandibular swelling",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chart is a procedural/management note (nerve block placement, antibiotic/analgesic prescription) rather than a diagnostic encounter; assessment section explicitly removed, limiting ability to verify diagnosis was stated."
+  },
+  "98": {
+    "slug": "dental_pain_emergency_visit",
+    "verdict": "ACCEPTABLE",
+    "primary_chief_complaint": "Left lower jaw dental pain",
+    "leak_concern": "minor",
+    "ddx_breadth": "narrow",
+    "reason": "Clear dental pathology (fractured tooth #20 with fluctuance/induration) supports obvious diagnosis, but chart lacks assessment section and some DDx reasoning remains valid (pulpitis vs. periapical abscess vs. other dental infection etiologies)."
+  },
+  "99": {
+    "slug": "detox_from_heroin",
+    "verdict": "BAD",
+    "primary_chief_complaint": "Detox from heroin",
+    "leak_concern": "major",
+    "ddx_breadth": "narrow",
+    "reason": "Chief complaint explicitly states the presenting problem (detox request) rather than describing ambiguous symptoms requiring differential diagnosis; this is a substance use disorder management visit, not a diagnostic encounter."
+  }
+}

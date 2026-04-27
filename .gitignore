@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+
+# ml data + prototype outputs (regenerable, sometimes DUA-protected)
+/data/
+ml/prototype_a/cases/
+ml/prototype_a/prepared/
+ml/prototype_a/results.md
+ml/**/__pycache__/
