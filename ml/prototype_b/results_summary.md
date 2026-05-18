@@ -104,6 +104,29 @@ python investigate_misses.py   # optional: per-miss evidence audit
 
 Requires PhysioNet credentials and MIMIC-IV + MIMIC-IV-Note + MIMIC-IV-ED downloaded under `physionet.org/files/...` (gitignored).
 
+## Assist-mode experiment — `ddx_assist.py`
+
+Simulates the realistic copilot workflow: the team has already documented most diagnoses; the LLM's job is to surface the few they missed.
+
+**Setup:** for each case, hide K=2 random gold dx. Show LLM the chart + the remaining gold dx as "documented by the team." Ask: "what additional dx are present?" Score recall on the hidden subset.
+
+**Results on 10 cases (18 hidden dx total, 10 of which were high-stakes):**
+
+| Cutoff | recall@5 | recall@10 | HS recall@10 |
+|---|---|---|---|
+| **admit** | 56% | 67% | **80% (8/10)** |
+| +24h | 44% | 67% | 70% |
+| +48h | 33% | 56% | 70% |
+| pre-discharge | 33% | 50% | 60% |
+
+Cost: $0.40.
+
+**Key insight: the curve INVERTS vs from-scratch mode.** Assist mode is BEST at admit (80% HS) and DEGRADES with more chart data (60% by pre-discharge). With more chart data + already-known dx in context, the LLM generates more diverse "additional" candidates — many plausible but not actually the hidden ones.
+
+This points to a product design question: the copilot's value may be concentrated at admission, where the team's preliminary list is still forming and a broad differential adds most.
+
+**Caveat:** random hiding doesn't mirror real-world miss patterns. Dalal-style misses are skewed toward specific cognitive blind spots — our 80% admit HS recall is an upper bound on real-world performance.
+
 ## Two-pass DDx experiment — `ddx_twopass.py`
 
 Hypothesis: a second LLM pass asking "what else might be missing?" with the first 15 in context would catch diagnoses bumped out of the initial top-15 ranking.
