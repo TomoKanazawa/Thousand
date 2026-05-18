@@ -63,5 +63,6 @@ ml/prototype_b/selected_admissions.json
 # Per-case results contain real MIMIC ICD codes/titles — keep ignored
 ml/prototype_b/results_*.json
 ml/prototype_b/results_*.md
+ml/prototype_b/investigate_report.md
 # Aggregate-only summary IS commitable (no PHI / no per-case dx)
 !ml/prototype_b/results_summary.md

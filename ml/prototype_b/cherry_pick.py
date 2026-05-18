@@ -27,6 +27,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 HOSP = ROOT / "physionet.org" / "files" / "mimiciv" / "3.1" / "hosp"
+NOTE = ROOT / "physionet.org" / "files" / "mimic-iv-note" / "2.2" / "note"
 OUT = Path(__file__).parent / "selected_admissions.json"
 
 # ---------------------------------------------------------------------------
@@ -209,6 +210,14 @@ def main() -> None:
     )
     adm = adm[~adm["died_early"]]
     print(f"    {len(adm):,} after early-death filter")
+
+    # Filter: must have a discharge summary in mimic-iv-note
+    # (a chart with no narrative is useless for the benchmark)
+    print("  Loading discharge.csv.gz hadm_ids to filter on note availability …")
+    disch_hadm = pd.read_csv(NOTE / "discharge.csv.gz", usecols=["hadm_id"])
+    disch_hadm_set = set(disch_hadm["hadm_id"].dropna().astype(int))
+    adm = adm[adm["hadm_id"].isin(disch_hadm_set)]
+    print(f"    {len(adm):,} after discharge-summary-required filter")
 
     # Join age
     adm = adm.merge(patients[["subject_id", "anchor_age", "gender"]], on="subject_id", how="left")

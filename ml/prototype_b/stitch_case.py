@@ -42,20 +42,116 @@ OUT_DIR = Path(__file__).parent / "data"
 # Config
 # ---------------------------------------------------------------------------
 
-# Same chronic-ICD filter as cherry_pick.py — applied to define the gold set
-CHRONIC_ICD_PATTERNS = re.compile(
+# Codes to EXCLUDE from the gold set.
+#
+# Business alignment: the product is a pre-visit copilot that surfaces NEW
+# acute diagnoses the physician should act on. It should NOT be evaluated on
+# its ability to re-state pre-existing chronic conditions, symptom codes
+# (those are the complaints), post-procedure complications (unpredictable
+# from admission), or hospital-acquired conditions.
+#
+# Three filter buckets:
+#   1. Chronic comorbidities (already in PMH — physician knows)
+#   2. Symptom / sign codes (those are the complaints, not the answer)
+#   3. Status / external-cause / billing-only codes
+
+ICD10_EXCLUDE = re.compile(
     r"^("
-    r"I10|I11|I12|I13|I15"
-    r"|E78|E11|E03|E66"
-    r"|Z"
-    r"|F17|F32|F33|F41"
-    r"|N18"
-    r"|G47"
-    r"|H"
-    r"|M81"
-    r"|K21"
+    # === Chronic comorbidities — already in PMH ===
+    r"I10|I11|I12|I13|I15"            # essential / other hypertension
+    r"|E78|E11|E03|E66"                # lipid / T2DM / hypothyroid / obesity
+    r"|F17|F31|F32|F33|F41|F84"        # tobacco, bipolar, depression, anxiety, PDD
+    r"|F70|F71|F72|F73|F79"            # intellectual disabilities (chronic)
+    r"|N18"                             # CKD
+    r"|G47"                             # sleep disorders
+    r"|M81"                             # osteoporosis (chronic state)
+    r"|M85"                             # other bone density disorders (chronic)
+    r"|M06"                             # other rheumatoid arthritis
+    r"|J45"                             # asthma
+    r"|J44"                             # COPD (chronic — though acute exacerbation IS J44.1)
+    r"|K21"                             # GERD
+    r"|D649"                            # anemia, unspecified — too generic
+    r"|E04"                             # nontoxic goiter (chronic)
+
+    # === Symptom / sign codes (R-chapter) ===
+    # These are the things the physician is investigating, not the diagnoses
+    # the workup should reveal. Catches abdominal pain, syncope, nausea,
+    # malaise, dyspnea, etc.
+    r"|R0"                              # R00-R09 circulatory/respiratory symptoms
+    r"|R1"                              # R10-R19 digestive symptoms
+    r"|R2"                              # R20-R29 skin/nervous symptoms
+    r"|R3"                              # R30-R39 GU symptoms
+    r"|R4"                              # R40-R49 cognition/perception/speech
+    r"|R5"                              # R50-R59 general symptoms (fever, syncope)
+    r"|R6"                              # R60-R69 general signs (edema, cachexia, SIRS)
+    r"|R7"                              # R70-R79 abnormal blood findings
+    r"|R8"                              # R80-R89 abnormal urine findings
+    r"|R9"                              # R90-R99 abnormal imaging findings
+
+    # === Status, history, external-cause codes ===
+    r"|Z"                               # status / history of / encounter for
+    r"|H"                               # eye/ear (usually incidental)
+    r"|V|W|X|Y"                         # external-cause codes (V/W/X/Y)
     r")"
 )
+
+ICD9_EXCLUDE = re.compile(
+    r"^("
+    # === ICD-9 chronic comorbidities ===
+    r"401|402|403|404|405"             # hypertension
+    r"|272"                             # lipid disorders
+    r"|250"                             # diabetes mellitus
+    r"|244"                             # acquired hypothyroidism
+    r"|245"                             # other thyroiditis (chronic)
+    r"|241"                             # nontoxic goiter
+    r"|242"                             # thyrotoxicosis
+    r"|278"                             # obesity
+    r"|305"                             # nondependent abuse
+    r"|303|304"                         # alcohol / drug dependence (chronic)
+    r"|296|300|311"                     # bipolar / anxiety / depression
+    r"|295|297|298|299"                 # schizophrenia / psych (chronic)
+    r"|317|318|319"                     # intellectual disabilities
+    r"|309"                             # adjustment reactions
+    r"|585"                             # chronic kidney disease
+    r"|327"                             # sleep disorders
+    r"|733"                             # osteoporosis & disorders of bone
+    r"|530"                             # GERD / esophageal disorders
+    r"|493"                             # asthma
+    r"|496"                             # chronic airway obstruction NEC
+    r"|492"                             # emphysema
+    r"|428"                             # heart failure (chronic — Note: keep individual subcodes?)
+
+    # === ICD-9 symptom codes (chapter 780-799) ===
+    r"|78[0-9]"                         # 780-789 general symptoms
+    r"|79[0-9]"                         # 790-799 ill-defined / abnormal findings
+
+    # === ICD-9 external causes (E codes) and status (V codes) ===
+    r"|E[0-9]"                          # E000-E999 external causes
+    r"|V[0-9]"                          # V01-V91 supplementary status
+
+    # === ICD-9 complications of care (996-999) ===
+    r"|99[6-9]"
+
+    # === ICD-9 SIRS / non-specific ===
+    r"|9959"                            # 99591-99594 SIRS / sepsis billing nuances
+    r")"
+)
+
+
+def is_excluded(icd_code: str, icd_version: int) -> bool:
+    """Return True if this ICD code should be filtered out of the gold set."""
+    code = str(icd_code).strip()
+    if not code:
+        return True
+    if icd_version == 9:
+        return bool(ICD9_EXCLUDE.match(code))
+    # default to ICD-10
+    return bool(ICD10_EXCLUDE.match(code))
+
+
+# Old single-regex variable kept for backwards-compat with cherry_pick.py
+# which is still ICD-10-only at the moment.
+CHRONIC_ICD_PATTERNS = ICD10_EXCLUDE
 
 
 # Sections of the discharge summary to KEEP (admission-time content)
@@ -306,20 +402,20 @@ def main() -> None:
         adm_row = adm[adm["hadm_id"] == hadm_id].iloc[0]
         admittime = adm_row["admittime"]
 
-        # Gold answer: acute discharge dx
+        # Gold answer: acute discharge dx (version-aware exclusion)
         dx_rows = dx[dx["hadm_id"] == hadm_id].sort_values("seq_num").copy()
-        dx_rows["is_chronic"] = dx_rows["icd_code"].astype(str).str.match(CHRONIC_ICD_PATTERNS)
         gold = []
         for _, r in dx_rows.iterrows():
+            excluded = is_excluded(r["icd_code"], int(r["icd_version"]))
             entry = {
                 "seq_num": int(r["seq_num"]),
                 "icd_code": str(r["icd_code"]),
                 "icd_version": int(r["icd_version"]),
                 "title": icd_lookup.get(str(r["icd_code"]), ""),
-                "is_chronic": bool(r["is_chronic"]),
+                "is_excluded": bool(excluded),
             }
             gold.append(entry)
-        acute_gold = [g for g in gold if not g["is_chronic"]]
+        acute_gold = [g for g in gold if not g["is_excluded"]]
 
         case_dir = OUT_DIR / str(hadm_id)
         case_dir.mkdir(parents=True, exist_ok=True)
@@ -350,8 +446,11 @@ def main() -> None:
             full_text = disch_rows.iloc[0]["text"]
             disch_text = extract_admission_sections(full_text)
 
-        # ED data
-        ed_text = format_ed(triage, ed_vitals)
+        # ED data — IMPORTANT: filter to THIS patient's ED stays only
+        pt_ed_stay_ids = set(edstays[edstays["hadm_id"] == hadm_id]["stay_id"])
+        pt_triage = triage[triage["stay_id"].isin(pt_ed_stay_ids)]
+        pt_ed_vitals = ed_vitals[ed_vitals["stay_id"].isin(pt_ed_stay_ids)]
+        ed_text = format_ed(pt_triage, pt_ed_vitals)
 
         # Build inputs at each cutoff
         cutoffs = {
