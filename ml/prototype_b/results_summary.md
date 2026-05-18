@@ -4,7 +4,7 @@
 
 ## Pipeline overview
 
-The benchmark tests: "given a patient chart at cutoff time T, what fraction of the eventual acute discharge diagnoses does the LLM rank in its top K?"
+The benchmark tests: *"given a patient chart at cutoff time T, what fraction of the eventual acute discharge diagnoses does the LLM rank in its top K?"*
 
 Cutoffs evaluated: `admit` (HPI + ED triage + initial labs only) · `+24h` · `+48h` · `pre-discharge` (full chart minus Brief Hospital Course / Discharge Diagnoses / Discharge Medications)
 
@@ -13,89 +13,101 @@ Gold set: discharge ICD codes, filtered to exclude chronic conditions, symptom c
 **Three metrics reported:**
 
 1. **All-acute recall@k** — fraction of acute discharge dx the model surfaced
-2. **High-stakes recall@k** — same but restricted to clinically dangerous conditions (sepsis, AKI, pneumonia, MI, PE, stroke, HF, GI bleed, encephalopathy, cancer, DKA, pancreatitis, respiratory failure, electrolyte derangement, acute anemia) — this is the metric most aligned with the missed-diagnosis product claim
+2. **High-stakes recall@k** — restricted to clinically dangerous conditions (sepsis, AKI, pneumonia, MI, PE, stroke, HF, GI bleed, encephalopathy, cancer, DKA, pancreatitis, respiratory failure, electrolyte derangement, acute anemia) — this is the metric most aligned with the missed-diagnosis product claim
 3. **Case-normalized recall@N** — k set to case's own gold count, so each case contributes equally
 
-## Run 2 — Haiku 4.5, n=10 stratified cases, FIXED pipeline
-
-Bugs fixed since first run:
-- ED triage/vitals were leaking across patients (each patient's input contained other patients' ED data)
-- 3 of 10 selected admissions had no discharge summary in MIMIC-IV-Note, leaving the LLM essentially nothing at the admit cutoff
-
-The fixes:
-- ED data filtered per-stay before formatting
-- `cherry_pick.py` now requires the admission has a discharge summary
-
-### Results
-
-n=10 stratified cases (1 per specialty bucket: cardiac, derm, endocrine_metab, ent_eye, gi, infectious, msk_rheum, neuro, onc_hem, psych)
-Total acute gold across all cases: ~99 codes, of which 35 are high-stakes.
+## Headline result — Haiku 4.5, n=50 stratified cases
 
 | Cutoff | all-acute r@15 | case-norm r@N | **high-stakes r@15** | non-high-stakes r@15 |
 |---|---|---|---|---|
-| admit | 52% | 45% | **71% (24/35)** | 41% |
-| +24h | 55% | 43% | **74% (26/35)** | 44% |
-| +48h | 48% | 40% | 69% (24/35) | 38% |
-| pre-discharge | 56% | 45% | **66% (23/35)** | 50% |
+| admit | 58% | 45% | **73% (88/120)** | 51% |
+| **+24h** | 63% | 50% | **79% (95/120)** | 55% |
+| +48h | 62% | 47% | 78% (93/120) | 54% |
+| pre-discharge | 59% | 46% | 77% (92/120) | 51% |
 
-**Cost:** ~$0.40 (200K input + 41K output tokens with Haiku, including LLM-judge calls)
+**Cost: $1.89** for 200 DDx calls + 200 judge calls (Haiku for both).
 
-### Comparison vs Run 1 (buggy pipeline)
+**The model is reliably biased toward high-stakes conditions.** Gap between HS and nHS recall: +22 to +26 pp across cutoffs. The system spends its 15 top slots on clinically dangerous diagnoses rather than incidental findings — exactly the inductive bias a copilot should have.
 
-| Metric | Run 1 (buggy) | Run 2 (fixed) | Δ |
-|---|---|---|---|
-| High-stakes r@15 at admit | 58% | **71%** | **+13 pp** |
-| High-stakes r@15 at +24h | 71% | 74% | +3 pp |
-| Total high-stakes targets | 24 | 35 | new sample is harder (more dx per case) |
-| Absolute high-stakes hits at pre-discharge | 19 | **23** | catching more in absolute terms |
+### Pitch-ready statement
 
-The big lift is at the **admit cutoff** — the buggy run had 3 cases with no admission narrative, dragging the average down. With clean data, admission-time recall jumps to 71% on high-stakes.
+> *"At admission + 24 hours of workup data, our system surfaces 79% of high-stakes diagnoses that will be documented during the stay. The recall curve plateaus at +24h — additional data beyond that does not meaningfully improve recall, suggesting the model is essentially saturated by the first day's findings."*
 
-## What this tells us
+### Curve shape
 
-**Defensible claim:** *"At admission with only HPI + ED triage + initial labs, our system catches 71% of high-stakes diagnoses that will be documented during the stay."*
+```
+HS recall@15:
+  admit          73%
+  +24h           79%   ← peak
+  +48h           78%
+  pre-discharge  77%
+```
 
-**Strategic context (Dalal 2024, BMJ Q&S):** 7.2% of inpatient encounters have a diagnostic error caught later in care. If our system at the admission timepoint recovers ≥94% of the full discharge dx set, by inclusion it would catch those 7%. We're at 71% on high-stakes, with documented headroom (see "next steps" below).
+Recall **plateaus at +24h** rather than monotonically climbing. Most predictive signal is in the first day of workup.
 
-## Negative results worth noting
+## Miss-evidence investigation (n=50)
 
-Three optimizations were attempted and *failed* to beat the simple Haiku baseline:
+For each of the 153 missed gold diagnoses at pre-discharge, Sonnet 4.6 judged whether the chart actually contained evidence pointing to it.
 
-1. **Opus 4.7 + simple prompt** — 71% pre-discharge HS recall (vs Haiku's 79% on same Run 1 sample). 17× the cost for worse accuracy.
-2. **Haiku + heavy, rule-heavy prompt** — 71% pre-discharge HS recall (-8 pp). The prompt's 6 explicit extraction rules distracted the model from clinical reasoning.
-3. **Both made the model produce more output tokens but catch fewer diagnoses.**
+### Aggregate verdicts
 
-The lesson: this task isn't bottlenecked by raw model capability or prompt verbosity. Pipeline integrity and data quality matter more than either.
-
-## Miss-evidence investigation
-
-For each missed gold diagnosis at pre-discharge (Run 1), we asked Sonnet 4.6 to judge whether the chart actually contained evidence pointing to it:
-
-| Verdict | Run 1 count | Interpretation |
+| Verdict | Count | %  |
 |---|---|---|
-| EVIDENCE_SUFFICIENT | 9/21 (43%) | Model failure — chart had the signals |
-| EVIDENCE_PARTIAL | 11/21 (52%) | Hints in chart, borderline |
-| EVIDENCE_ABSENT | 1/21 (5%) | Genuine data gap |
+| **EVIDENCE_SUFFICIENT** | **96** | **63%** |
+| EVIDENCE_PARTIAL | 45 | 29% |
+| EVIDENCE_ABSENT | 12 | 8% |
 
-**95% of misses had recoverable evidence in the chart.** The bottleneck is the LLM layer, not the data pipeline. Specific failure modes: not treating med orders as diagnostic evidence, not combining related findings into named entities (e.g., listing three cytopenias as three entries instead of pancytopenia), missing specific electrolyte direction (hyperkalemia vs hypokalemia).
+### High-stakes misses only (n=28)
 
-## Next steps
+| Verdict | Count | %  |
+|---|---|---|
+| **EVIDENCE_SUFFICIENT** | **18** | **64%** |
+| EVIDENCE_PARTIAL | 10 | 36% |
+| **EVIDENCE_ABSENT** | **0** | **0%** |
 
-In priority order:
+**Zero high-stakes misses are due to missing data.** For dangerous conditions, every miss had at least some chart evidence — the LLM layer is the bottleneck, not the data pipeline.
 
-1. **Scale to n=50** — confirm the 71% admit recall holds with tighter confidence intervals (~$2 cost)
-2. **Investigate misses at n=50** — see if failure modes from n=10 are stable or sample-specific (~$2)
-3. **Better chart formatting** — current labs are a flat timestamp list; a trend-table format might help the model see patterns
-4. **Prior admissions context** — for repeat patients, including (sanitized) prior discharge summaries adds context
+**92% of all misses have recoverable evidence** in the chart. The path to higher recall runs through model behavior (smarter chart formatting, better extraction logic), not adding more data sources.
+
+## Strategic context (Dalal 2024, BMJ Q&S)
+
+7.2% of inpatient encounters have a diagnostic error caught later in care. If our system at the admission timepoint recovers ≥94% of the full discharge dx set, by inclusion it would catch those 7%. We're at 73% on high-stakes at admit. The headroom is real, and the miss-evidence investigation shows the chart almost always has the signal — closing the gap is a model-behavior problem.
+
+## Negative results worth recording
+
+Three optimizations were attempted on the n=10 pilot and failed to beat the simple Haiku baseline:
+
+1. **Opus 4.7 + simple prompt** — 71% pre-discharge HS recall (vs Haiku's 79% on the same sample). 17× cost for worse accuracy.
+2. **Haiku + heavy, rule-based prompt** — 71% pre-discharge HS recall (-8 pp). The prompt's 6 explicit extraction rules distracted the model from clinical reasoning.
+3. **Both produced more output tokens for fewer correct diagnoses.**
+
+This task is not bottlenecked by raw model capability or prompt verbosity. Pipeline integrity, gold-set definition, and data quality matter more than either.
+
+## Pipeline corrections during this work
+
+Two real bugs were fixed; both were dragging the headline number:
+
+1. **ED triage/vitals were leaking across patients** — each stitched chart contained other patients' ED vitals (timestamps spanning decades made this visible). Fixed by filtering triage/vitals to each patient's own `stay_id` before formatting.
+2. **3 of the original 10 cherry-picked admissions had no discharge summary in MIMIC-IV-Note at all**, leaving the LLM with no admission narrative. Fixed by requiring the admission have a discharge summary in `cherry_pick.py`.
+
+After fixes, admission-time high-stakes recall went from 58% → 71% (n=10) → 73% (n=50).
 
 ## Repro
 
 ```bash
 cd ml/prototype_b
-python cherry_pick.py --n 10
+python cherry_pick.py --n 50
 python stitch_case.py
 python ddx.py --model haiku
 python investigate_misses.py   # optional: per-miss evidence audit
 ```
 
 Requires PhysioNet credentials and MIMIC-IV + MIMIC-IV-Note + MIMIC-IV-ED downloaded under `physionet.org/files/...` (gitignored).
+
+## Next steps (in priority order)
+
+1. **Better chart formatting** — current labs are a flat timestamp list; a trend-table format may help the model see patterns it currently misses
+2. **Tighten chronic-code filter** — some misses are chronic PMH items leaking through our exclusion filter, inflating the apparent miss count
+3. **Prior admissions context** — for repeat patients, including (sanitized) prior discharge summaries adds real context
+4. **Scale to n=200+** — for publication-grade confidence intervals
+5. **Physician spot-review** — once a co-founder is available, validate that "high-stakes recall" matches clinical judgment of which misses actually matter

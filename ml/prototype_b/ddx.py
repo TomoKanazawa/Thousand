@@ -256,8 +256,20 @@ def score_recall(client: Anthropic, judge_model: str,
     """One judge call: match each gold dx to a rank in the DDx list (or -1)."""
     n_gold = len(gold)
     if n_gold == 0:
-        return {"n_gold": 0, "hits_5": 0, "hits_10": 0, "hits_15": 0,
-                "recall_5": 0, "recall_10": 0, "recall_15": 0, "matched_ranks": []}
+        return {
+            "n_gold": 0,
+            "hits_5": 0, "hits_10": 0, "hits_15": 0,
+            "recall_5": 0, "recall_10": 0, "recall_15": 0,
+            "hits_caseN": 0, "k_caseN": 0, "recall_caseN": 0,
+            "n_high_stakes": 0,
+            "hits_hs_5": 0, "hits_hs_10": 0, "hits_hs_15": 0,
+            "recall_hs_5": None, "recall_hs_10": None, "recall_hs_15": None,
+            "n_non_hs": 0,
+            "hits_nhs_5": 0, "hits_nhs_10": 0, "hits_nhs_15": 0,
+            "recall_nhs_5": None, "recall_nhs_10": None, "recall_nhs_15": None,
+            "matched_ranks": [],
+            "high_stakes_flags": [],
+        }
 
     gold_list = "\n".join(
         f"  [{i}] {g['icd_code']} — {g['title']}" for i, g in enumerate(gold)
@@ -391,8 +403,9 @@ def main() -> None:
                 continue
 
             score = score_recall(client, judge_id, ddx, gold_acute)
-            hs_str = (f"hs@15={score['hits_hs_15']}/{score['n_high_stakes']}"
-                      if score['n_high_stakes'] > 0 else "hs@15=—")
+            n_hs = score.get('n_high_stakes', 0)
+            hs_str = (f"hs@15={score.get('hits_hs_15', 0)}/{n_hs}"
+                      if n_hs > 0 else "hs@15=—")
             print(f"  {cutoff:<15s} "
                   f"r@5={score['hits_5']}/{score['n_gold']} ({score['recall_5']:.0%})  "
                   f"r@10={score['hits_10']}/{score['n_gold']} ({score['recall_10']:.0%})  "
