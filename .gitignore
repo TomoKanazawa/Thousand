@@ -59,10 +59,15 @@ ml/**/__pycache__/
 # MIMIC-IV raw data + derived case files — DUA-protected, never commit
 /physionet.org/
 ml/prototype_b/data/
+ml/prototype_b/data_aki/
 ml/prototype_b/selected_admissions.json
+ml/prototype_b/selected_admissions_aki.json
+ml/prototype_b/kdigo_aki_candidates.json
 # Per-case results contain real MIMIC ICD codes/titles — keep ignored
 ml/prototype_b/results_*.json
 ml/prototype_b/results_*.md
 ml/prototype_b/investigate_report.md
-# Aggregate-only summary IS commitable (no PHI / no per-case dx)
+# Aggregate-only artifacts ARE commitable (no PHI / no per-case dx)
 !ml/prototype_b/results_summary.md
+!ml/prototype_b/kdigo_aki_report.md
+!ml/prototype_b/team_report.pdf

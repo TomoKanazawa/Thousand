@@ -35,8 +35,14 @@ HOSP = ROOT / "physionet.org" / "files" / "mimiciv" / "3.1" / "hosp"
 NOTE = ROOT / "physionet.org" / "files" / "mimic-iv-note" / "2.2" / "note"
 ED = ROOT / "physionet.org" / "files" / "mimic-iv-ed" / "2.2" / "ed"
 
-SELECTED = Path(__file__).parent / "selected_admissions.json"
-OUT_DIR = Path(__file__).parent / "data"
+import argparse
+_argp = argparse.ArgumentParser(add_help=False)
+_argp.add_argument("--selected", default=str(Path(__file__).parent / "selected_admissions.json"))
+_argp.add_argument("--out-dir", default=str(Path(__file__).parent / "data"))
+_args, _ = _argp.parse_known_args()
+
+SELECTED = Path(_args.selected)
+OUT_DIR = Path(_args.out_dir)
 
 # ---------------------------------------------------------------------------
 # Config
