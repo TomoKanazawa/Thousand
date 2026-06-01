@@ -67,9 +67,15 @@ ml/prototype_b/kdigo_aki_candidates.json
 ml/prototype_b/results_*.json
 ml/prototype_b/results_*.md
 ml/prototype_b/investigate_report.md
+# Per-case verification outputs contain hadm_ids + MIMIC-derived quotes — keep ignored
+ml/prototype_b/tier2_verification.json
+ml/prototype_b/tier2_verification_report.md
+ml/prototype_b/tier2_verification_report.pdf
+ml/prototype_b/tier2_verification_report.tex
 # Aggregate-only artifacts ARE commitable (no PHI / no per-case dx)
 !ml/prototype_b/results_summary.md
 !ml/prototype_b/kdigo_aki_report.md
 !ml/prototype_b/team_report.pdf
+!ml/prototype_b/hit_rates_resliced.md
 # papers/ — PDFs are paywalled/copyrighted; ignore them but keep our MD analysis files
 papers/*.pdf
