@@ -8,6 +8,10 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "routes": [
+    { "pattern": "thousandhealth.com", "custom_domain": true },
+    { "pattern": "www.thousandhealth.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   }
