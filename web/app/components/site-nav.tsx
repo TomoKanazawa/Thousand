@@ -5,9 +5,8 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent text-sm font-bold text-white">
-            T
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-1000.svg" alt="1000" className="h-7 w-7" />
           <span className="text-base font-semibold tracking-tight">
             Thousand Health
           </span>

@@ -5,9 +5,8 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-surface">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-2.5">
-          <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent text-xs font-bold text-white">
-            T
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-1000.svg" alt="1000" className="h-6 w-6" />
           <span className="text-sm font-semibold">Thousand Health</span>
         </div>
         <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted">
