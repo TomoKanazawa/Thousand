@@ -20,6 +20,12 @@ web/.next/
 /out/
 web/out/
 
+# cloudflare / opennext build artifacts
+web/.open-next/
+web/.wrangler/
+.wrangler/
+web/cloudflare-env.d.ts
+
 # production
 /build
 
