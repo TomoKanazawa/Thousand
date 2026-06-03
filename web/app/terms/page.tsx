@@ -131,8 +131,8 @@ export default function TermsPage() {
             <h2>10. Contact</h2>
             <p>
               If you have questions about these Terms, contact us at{" "}
-              <a href="mailto:tomo@thousandhealth.com">
-                tomo@thousandhealth.com
+              <a href="mailto:legal@thousandhealth.com">
+                legal@thousandhealth.com
               </a>
               .
             </p>

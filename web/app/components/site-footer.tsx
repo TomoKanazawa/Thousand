@@ -20,7 +20,7 @@ export function SiteFooter() {
             href="mailto:tomo@thousandhealth.com"
             className="hover:text-foreground"
           >
-            tomo@thousandhealth.com
+            Contact
           </a>
         </nav>
         <p className="text-xs text-muted">

@@ -178,7 +178,7 @@ export default function Home() {
                 href="mailto:tomo@thousandhealth.com"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-white px-7 text-base font-medium text-foreground transition-colors hover:bg-white/90"
               >
-                tomo@thousandhealth.com
+                Contact us
               </a>
             </div>
           </div>

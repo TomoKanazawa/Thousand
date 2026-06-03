@@ -122,8 +122,8 @@ export default function PrivacyPage() {
             <h2>10. Contact</h2>
             <p>
               If you have questions about this Privacy Policy, contact us at{" "}
-              <a href="mailto:tomo@thousandhealth.com">
-                tomo@thousandhealth.com
+              <a href="mailto:privacy@thousandhealth.com">
+                privacy@thousandhealth.com
               </a>
               .
             </p>
