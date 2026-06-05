@@ -88,3 +88,4 @@ ml/prototype_b/tier2_verification_report.tex
 !ml/prototype_b/hit_rates_resliced.md
 # papers/ — PDFs are paywalled/copyrighted; ignore them but keep our MD analysis files
 papers/*.pdf
+papers/**/*.pdf
