@@ -65,6 +65,22 @@ We narrowed the set one constraint at a time:
 
 ---
 
+## The 5 relevant papers (answer withheld + real patient data)
+
+The 17-paper set reduces to **5** that withhold the answer AND use real patient data. Only 2 target a single named condition (the shape of our "does this patient have AKI?" question), and only those 2 (+ Haimovich) report usable specificity.
+
+| Paper | Task, plainly | Targeted one condition? | Specificity |
+|---|---|---|---|
+| **Haimovich** | "Did the doctors miss a diagnosis in this ER chart?" — reliable at saying *nothing missed*, noisy when it flags | ❌ general (hybrid = 10 conditions) | ~43–65% |
+| **Boussina** | Predict **sepsis** early from live data before doctors call it | ✅ sepsis | — (used false alarms/patient-hr, 0.0087) |
+| **Brodeur** (ED subset) | "What's the diagnosis?" on real ER cases at triage — 67% right, beat attendings (~50–55%) | ❌ open-ended | n/a (no negative class) |
+| **Shyr / UDN** | "What's the diagnosis?" on undiagnosed patients — solved 13% (> expert review 6%) | ❌ open-ended | n/a (no negative class) |
+| **Rodriguez-Nava / CLABSI** | "Does this patient have a **central-line infection**?" from real notes — caught ~80% but cried wolf | ✅ CLABSI | 35% → 75% (w/ more data) |
+
+**Takeaways:** the two condition-targeted papers (Boussina, CLABSI) are the closest in *form* to our AKI question; both show the over-calling / low-specificity pattern (CLABSI 35%). The two open-ended ones (Brodeur, Shyr) have no specificity. **None** combines our full stack (answer stripped + admission-window + common condition + raw EHR).
+
+---
+
 ## The white space (why our AKI work is novel)
 
 Stacking all filters — **answer withheld + real patient data + open-ended diagnosis + raw/messy EHR** — **no paper in the set qualifies.**
