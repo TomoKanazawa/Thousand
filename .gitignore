@@ -69,6 +69,7 @@ ml/**/__pycache__/
 /physionet.org/
 ml/prototype_b/data/
 ml/prototype_b/data_aki/
+ml/prototype_b/pilot_hide_one/
 ml/prototype_b/selected_admissions.json
 ml/prototype_b/selected_admissions_aki.json
 ml/prototype_b/kdigo_aki_candidates.json
