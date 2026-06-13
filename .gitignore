@@ -70,6 +70,7 @@ ml/**/__pycache__/
 ml/prototype_b/data/
 ml/prototype_b/data_aki/
 ml/prototype_b/pilot_hide_one/
+ml/prototype_b/pilot_hide_one_v2/
 ml/prototype_b/selected_admissions.json
 ml/prototype_b/selected_admissions_aki.json
 ml/prototype_b/kdigo_aki_candidates.json
@@ -90,3 +91,4 @@ ml/prototype_b/tier2_verification_report.tex
 # papers/ — PDFs are paywalled/copyrighted; ignore them but keep our MD analysis files
 papers/*.pdf
 papers/**/*.pdf
+ml/prototype_b/selected_admissions.bak.json

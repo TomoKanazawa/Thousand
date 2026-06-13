@@ -1,0 +1,257 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue!60!black}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\title{\textbf{Criteria-Augmented Re-scoring of the\\Hide-One-Diagnosis Benchmark}\\[0.5em]
+\large 100-patient MIMIC-IV pilot, Haiku predictor}
+\author{Thousand Health --- Internal Report}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\section*{TL;DR}
+On a 100-patient MIMIC-IV hide-one-diagnosis pilot using Haiku as the predictor,
+strict ICD-label matching scores the system at \textbf{34\% top-3 sensitivity}.
+After re-scoring with a 522-entry textbook criteria library (verbatim quotes from
+Tier 1--3 sources, re-verified against cited URLs by LLM verifier agents; \emph{not}
+physician-reviewed) and an
+LLM judge that checks each chart against verbatim guideline thresholds, the
+\textbf{criterion-validated sensitivity rises to 78\%} (+44 patients), at a candidate-level
+\textbf{lenient PPV of 66\%} (strict 41\%). The criteria layer is doing the real precision
+work; Haiku's confidence score adds little additional separation.
+
+\section{Background}
+The hide-one-diagnosis benchmark hides a single ICD-coded diagnosis from the chart
+and asks the LLM to recover it as one of its top-3 ranked candidates. Strict scoring
+requires an exact string/concept match against the hidden ICD label. This scoring
+under-counts cases where the LLM names a different but clinically real condition the
+patient has --- e.g., the hidden ICD is ``Sialolithiasis'' but the LLM correctly identifies
+``Hypokalemia'' that the chart in fact documents.
+
+We hypothesized that many of these ``misses'' are not errors but legitimate co-existing
+conditions the strict scorer cannot validate. To test this, we built
+\texttt{criteria\_db.json} --- 522 conditions with verbatim quoted textbook criteria from
+Tier 1--3 sources (specialty societies, government regulatory, peer-reviewed
+foundational papers). Source-verbatim fidelity was checked by LLM verifier agents
+that re-fetched each cited URL and confirmed the quoted text appears at the source.
+No physician reviewer has audited the library.
+
+\section{Method}
+\subsection{Inputs}
+\begin{itemize}[leftmargin=*,nosep]
+\item \textbf{Predictor}: Claude Haiku, top-3 ranked candidates with a 0--100 confidence
+    score per candidate, across 100 MIMIC-IV admissions.
+\item \textbf{Criteria DB}: 522 conditions, each with verbatim \texttt{criterion\_quote}
+    and source URL. 6 entries dropped during the trust audit for citation errors;
+    76 carry caveat notes from the audit.
+\item \textbf{Charts}: De-identified MIMIC-IV chart.txt per admission (PHI/DUA-protected;
+    not committed).
+\end{itemize}
+
+\subsection{Pipeline}
+\begin{enumerate}[leftmargin=*,nosep]
+\item \textbf{Slug mapping.} LLM mapper assigned each of 218 unique top-3 candidate dx
+    strings to a criteria\_db slug or \texttt{null}. 157 mapped (72\%); 61 unmappable
+    (vague compound dx, unsupported conditions).
+\item \textbf{Criterion-check judging.} For each of 230 (patient, candidate) pairs that
+    mapped, a Sonnet judge agent read \texttt{chart.txt}, applied the verbatim criterion
+    quote strictly, and returned \texttt{meets} / \texttt{does\_not\_meet} /
+    \texttt{insufficient\_evidence}. Ten parallel agents, $\sim$23 jobs each.
+\item \textbf{Re-aggregation.} A candidate is a true positive if it either matches the
+    strict hidden ICD label \emph{or} the judge said \texttt{meets}. A patient is a
+    true positive if any of its top-3 candidates is a TP.
+\end{enumerate}
+
+\subsection{Metric definitions}
+\begin{description}[leftmargin=*]
+\item[Sensitivity (per-patient)] $\text{TP}_{\text{patient}} / 100$, where a patient is a TP
+    if $\geq 1$ top-3 candidate above the confidence threshold is validated. Per-patient is
+    the only well-defined unit for sensitivity here --- the universe of ``all conditions
+    the LLM should have produced'' is unbounded once we leave the strict hidden-ICD scope.
+\item[PPV strict (per-candidate)] $\text{TP} / \text{all candidates above threshold}$.
+    Counts \texttt{does\_not\_meet}, \texttt{insufficient\_evidence}, and unmappable
+    candidates all as false positives. Harsh on the predictor: it pays for our redacted
+    labs and incomplete criteria DB.
+\item[PPV lenient (per-candidate)] $\text{TP} / (\text{TP} + \text{does\_not\_meet only})$.
+    Drops unknowns from the denominator; only counts candidates where the judge actively
+    saw chart evidence contradicting the criterion as FP. Fair to the predictor.
+\end{description}
+
+\section{Results}
+
+\subsection{Aggregate verdict mix}
+Across 230 graded (patient, candidate) pairs:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Verdict & Count \\
+\midrule
+meets & 103 \\
+does\_not\_meet & 65 \\
+insufficient\_evidence & 62 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Of the 297 total top-3 candidates: 230 were judgable (slug-mapped), 49 had no slug,
+18 had no verdict for other reasons (slug existed but judge had no input row).
+
+\subsection{Patient-level TP rate}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Metric & Patients & Rate \\
+\midrule
+Strict top-3 (hidden ICD recovered) & 34/100 & 34\% \\
+Criterion-met top-3 (potential TP only) & 67/100 & 67\% \\
+\textbf{Union (strict OR criterion-met)} & \textbf{78/100} & \textbf{78\%} \\
+Net new TPs from criteria layer & +44 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Cohort breakdown:
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Original-scoring cohort & $n$ & Criterion-met in top-3 \\
+\midrule
+Strict TP (hidden at rank 1--3) & 34 & 23 (sanity check) \\
+Matched rank 4--10 (off-podium) & 24 & 16 (66\%) \\
+No match in top-10 (rank $-1$) & 42 & 28 (66\%) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The 23/34 ``strict TP also passes criteria'' sanity check is reasonable; the other 11
+strict TPs had hidden ICDs that did not have a criteria\_db entry, so the criterion
+machinery had nothing to validate.
+
+\subsection{Confidence-threshold sweep}
+\begin{center}
+\small
+\begin{tabular}{rrrrrrr}
+\toprule
+conf $\geq$ & \#cand & TP & PPV strict & PPV lenient & Sens relaxed & Sens strict \\
+\midrule
+0   & 297 & 121 & 41\% & 66\% & \textbf{78\%} & 34\% \\
+60  & 295 & 121 & 41\% & 67\% & 78\% & 34\% \\
+65  & 290 & 120 & 41\% & 67\% & 77\% & 34\% \\
+70  & 243 & 104 & 43\% & 68\% & 70\% & 31\% \\
+75  & 162 &  76 & \textbf{47\%} & \textbf{75\%} & \textbf{56\%} & 24\% \\
+80  &  69 &  36 & 52\% & 78\% & 25\% & 15\% \\
+85  &  43 &  26 & 60\% & 84\% & 21\% & 13\% \\
+90  &  14 &  10 & 71\% & 91\% & 10\% &  7\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Confidence calibration}
+Mean confidence by ground-truth category:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Category & Mean confidence \\
+\midrule
+Strict hidden-match candidates ($n=30$) & 80.7 \\
+``meets'' candidates ($n=103$) & 77.7 \\
+``does\_not\_meet'' candidates ($n=65$) & 73.6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A 7-point spread between correct and incorrect predictions. Haiku's confidence is only
+weakly calibrated --- it is not a reliable filter on its own.
+
+\section{Interpretation}
+\subsection{What the +44 actually represents}
+The 44 new TPs are cases where Haiku named a different real condition the patient
+has --- validated against chart data using verbatim textbook thresholds. Examples from
+the ``no-match'' cohort ($n=28$ new TPs):
+
+\begin{itemize}[leftmargin=*,nosep]
+\item Hidden: \emph{Sialolithiasis} $\rightarrow$ Haiku ranked Hypokalemia \#1; K was in fact low.
+\item Hidden: \emph{Pressure ulcer, stage III} $\rightarrow$ Hypokalemia + Hypophosphatemia, both verified.
+\item Hidden: \emph{Melena} $\rightarrow$ Hypomagnesemia + Anemia, both verified.
+\item Hidden: \emph{Cervicalgia} $\rightarrow$ Anemia (normocytic) + Hypomagnesemia, both verified.
+\end{itemize}
+
+This pattern is loud in the data: ``no-match'' admissions frequently have a relatively
+benign hidden ICD (cervicalgia, glaucoma, urticaria), while Haiku correctly surfaces the
+clinically significant electrolyte / AKI / anemia / sepsis picture --- which a physician
+reading the chart would also prioritize.
+
+\subsection{Where PPV lives}
+\begin{itemize}[leftmargin=*,nosep]
+\item No threshold: PPV strict 41\%, PPV lenient 66\%, Sens 78\%.
+\item conf $\geq 75$: PPV strict 47\%, PPV lenient 75\%, Sens 56\%.
+\item conf $\geq 80$: PPV strict 52\%, PPV lenient 78\%, Sens 25\%.
+\end{itemize}
+
+The 75 cutoff is the best balanced operating point under Haiku --- modest precision
+gain, modest recall cost. Above 80 the sensitivity collapse is non-linear because
+Haiku's confidence distribution is compressed (p10 = 68, p90 = 88).
+
+\subsection{Caveats}
+\begin{enumerate}[leftmargin=*,nosep]
+\item \textbf{Electrolyte / AKI dominance.} $\sim$70\% of the ``meets'' verdicts are
+    single-lab-threshold conditions (hypoK, hypoMg, hypoCa, hypoP, AKI by KDIGO).
+    These are easy to verify and over-represented in top-3 candidates. ``Real
+    test-of-skill'' specific syndromes are a much smaller share.
+\item \textbf{62 insufficient\_evidence.} The chart often had redacted lab values
+    (\texttt{\_\_\_}). Strict PPV penalizes the predictor for our redactions; the gap
+    between strict and lenient PPV is mostly this.
+\item \textbf{Slug-mapper was conservative.} 61/218 unique dx strings unmapped. Some
+    truly are unmappable (multi-condition free text); some are criteria-DB coverage gaps.
+\item \textbf{Predictor is Haiku.} Confidence is poorly calibrated. Re-running on
+    Sonnet/Opus would likely shift the curve.
+\item \textbf{No physician in the loop, anywhere.} The criteria DB was source-verified
+    by LLM agents, not reviewed by clinicians. The 230 chart-vs-criterion verdicts
+    were rendered by a single LLM judge (Sonnet), with no physician adjudication.
+    Both layers can carry systematic errors a domain expert would catch.
+\end{enumerate}
+
+\section{Implications for product framing}
+\begin{itemize}[leftmargin=*,nosep]
+\item As an \textbf{autonomous flagger} (no physician in loop): 41\% top-3 strict PPV
+    is too noisy. A conf-$\geq 90$ slice yields 91\% lenient PPV but 10\% sensitivity ---
+    a niche ``high-confidence-only auto-alert'' could be viable.
+\item As a \textbf{triage assistant} (physician reviews flagged cases): 78\% relaxed
+    sensitivity at 66\% lenient PPV is a defensible operating point. The criteria layer
+    transforms the system from a string-match benchmark into a clinically-grounded
+    detector.
+\item \textbf{The criteria DB is the asset.} Without it, sensitivity is 34\%; with it, 78\%.
+    Confidence-thresholding adds little independent lift. The pitch should center on
+    verbatim society-guideline criteria as the verification layer, not the LLM's self-reported
+    confidence.
+\end{itemize}
+
+\section{Next steps}
+\begin{enumerate}[leftmargin=*,nosep]
+\item Re-run with Sonnet/Opus as predictor; quantify confidence-calibration delta.
+\item Expand criteria\_db coverage for unmappable dx strings (61 unique).
+\item Spot-check 20--30 ``meets'' verdicts manually for judge-error rate.
+\item Replace MDCalc / Wikipedia / weak-domain sources in the 76 caveat entries with
+    primary society guideline citations.
+\end{enumerate}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+\small
+\noindent\textbf{Artifacts.} Re-score detail: \texttt{/tmp/rescore\_result.json} (local,
+not committed --- contains PHI-derived data). Judge verdicts: \texttt{/tmp/verdicts\_judge\_0..9.json}.
+Criteria DB: \texttt{criteria\_db.json} (522 entries post-audit).
+
+\end{document}

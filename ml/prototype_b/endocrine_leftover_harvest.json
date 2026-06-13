@@ -1,0 +1,159 @@
+[
+  {
+    "id": "hyperthyroidism_overt",
+    "name": "Overt Hyperthyroidism (ATA 2016)",
+    "category": "endocrine/thyroid",
+    "criterion": "Subnormal (usually undetectable) serum TSH with elevated serum free T4 and/or T3.",
+    "criterion_quote": "Overt hyperthyroidism is defined as a subnormal (usually undetectable) serum thyrotropin (TSH) with elevated serum levels of triiodothyronine (T3) and/or free thyroxine estimates (free T4).",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "American Thyroid Association",
+      "title": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis (Ross et al.)",
+      "url": "https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229",
+      "year": "2016",
+      "tier": "1"
+    },
+    "notes": "Thyroid 2016;26(10):1343-1421. PMID 27521067."
+  },
+  {
+    "id": "hyperthyroidism_subclinical",
+    "name": "Subclinical Hyperthyroidism (ATA 2016)",
+    "category": "endocrine/thyroid",
+    "criterion": "Low or undetectable serum TSH with T3 and free T4 within the normal reference range.",
+    "criterion_quote": "Subclinical hyperthyroidism is defined as a low or undetectable serum TSH with values within the normal reference range for both T3 and free T4.",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "American Thyroid Association",
+      "title": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis (Ross et al.)",
+      "url": "https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229",
+      "year": "2016",
+      "tier": "1"
+    },
+    "notes": "Persistent TSH <0.1 mU/L (Grade 2) carries cardiovascular and bone risk; ATA recommends treatment in high-risk groups."
+  },
+  {
+    "id": "graves_disease",
+    "name": "Graves Disease (ATA 2016)",
+    "category": "endocrine/thyroid",
+    "criterion": "Biochemical thyrotoxicosis with etiology established by (a) elevated TRAb/TSI, (b) diffusely elevated radioactive iodine uptake (RAIU), or (c) increased thyroidal blood flow on ultrasound. Clinical diagnosis is sufficient when symmetric goiter + orbitopathy + moderate-to-severe hyperthyroidism coexist.",
+    "criterion_quote": "The etiology of thyrotoxicosis should be determined. If the diagnosis is not apparent based on the clinical presentation and initial biochemical evaluation, diagnostic testing is indicated and can include, depending on available expertise and resources, (1) measurement of TRAb, (2) determination of the radioactive iodine uptake (RAIU), or (3) measurement of thyroidal blood flow on ultrasonography.",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "American Thyroid Association",
+      "title": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis (Ross et al.)",
+      "url": "https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229",
+      "year": "2016",
+      "tier": "1"
+    },
+    "notes": "Additional verbatim: 'In a patient with a symmetrically enlarged thyroid, recent onset of orbitopathy, and moderate to severe hyperthyroidism, the diagnosis of GD is likely and further evaluation of hyperthyroidism causation is unnecessary.'"
+  },
+  {
+    "id": "gestational_diabetes_iadpsg",
+    "name": "Gestational Diabetes Mellitus (IADPSG / ADA one-step 75g OGTT)",
+    "category": "endocrine/diabetes-pregnancy",
+    "criterion": "One-step 75g OGTT at 24-28 weeks; GDM diagnosed if ≥1 value meets or exceeds: fasting 5.1 mmol/L (92 mg/dL), 1-hour 10.0 mmol/L (180 mg/dL), 2-hour 8.5 mmol/L (153 mg/dL).",
+    "criterion_quote": "At least one of these thresholds must be equaled or exceeded to make a diagnosis of GDM: FPG 5.1 mmol/l (92 mg/dl); 1-h plasma glucose 10.0 mmol/l (180 mg/dl); 2-h plasma glucose 8.5 mmol/l (153 mg/dl).",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "International Association of Diabetes and Pregnancy Study Groups (IADPSG) Consensus Panel",
+      "title": "International Association of Diabetes and Pregnancy Study Groups Recommendations on the Diagnosis and Classification of Hyperglycemia in Pregnancy",
+      "url": "https://diabetesjournals.org/care/article/33/3/676/38903/International-Association-of-Diabetes-and",
+      "year": "2010",
+      "tier": "1"
+    },
+    "notes": "Diabetes Care 2010;33(3):676-682. Adopted by ADA Standards of Care; alternative two-step Carpenter-Coustan after 50g screen also accepted (ACOG)."
+  },
+  {
+    "id": "adrenal_incidentaloma_2023",
+    "name": "Adrenal Incidentaloma (ESE/ENSAT 2023)",
+    "category": "endocrine/adrenal",
+    "criterion": "All adrenal incidentalomas require (a) non-contrast CT to assess size and density and (b) 1-mg overnight dexamethasone suppression test; add plasma/urine metanephrines, and aldosterone/renin ratio if hypertension or hypokalemia. Lesion considered benign with no further imaging if homogeneous and ≤10 HU; relevant malignancy risk if ≥4 cm and heterogeneous or unenhanced HU >20. Post-dexamethasone cortisol ≤50 nmol/L (≤1.8 µg/dL) excludes autonomous cortisol secretion.",
+    "criterion_quote": "We recommend the use of non-contrast CT to assess basic imaging features of an adrenal incidentaloma... If the lesion is homogenous and has a low unenhanced attenuation value [≤10 Hounsfield units (HU)], the lesion is considered benign and no further imaging is required... We recommend that patients with adrenal incidentalomas undergo a 1-mg overnight dexamethasone suppression test... We recommend serum cortisol levels post dexamethasone ≤50 nmol/L (≤1.8 µg/dL) as a diagnostic criterion for the exclusion of autonomous cortisol secretion.",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "European Society of Endocrinology / European Network for the Study of Adrenal Tumors",
+      "title": "European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas, in collaboration with the European Network for the Study of Adrenal Tumors (Fassnacht et al.)",
+      "url": "https://academic.oup.com/ejendo/article/189/1/G1/7198474",
+      "year": "2023",
+      "tier": "1"
+    },
+    "notes": "Eur J Endocrinol 2023;189(1):G1-G42. Replaces 2016 ESE/ENSAT guideline."
+  },
+  {
+    "id": "men1",
+    "name": "Multiple Endocrine Neoplasia Type 1 (MEN1)",
+    "category": "endocrine/genetic-neoplasia",
+    "criterion": "Diagnosis established by ANY of: (1) two or more primary MEN1-associated endocrine tumors (parathyroid, enteropancreatic, pituitary); (2) one MEN1-associated tumor in a first-degree relative of a patient with clinical MEN1; (3) germline MEN1 mutation (including in asymptomatic carriers).",
+    "criterion_quote": "MEN1 is defined clinically by the occurrence of two or more primary MEN1-associated endocrine tumors (i.e. parathyroid adenoma, enteropancreatic tumor, and pituitary adenoma). Familial MEN1 is defined as occurrence of one of the MEN1-associated tumors in a first-degree relative of a patient with a clinical diagnosis of MEN1. Identification of a germline MEN1 mutation in an individual, who may be asymptomatic and has not yet developed serum biochemical or radiological abnormalities indicative of tumor development, also establishes the diagnosis.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "Endocrine Society",
+      "title": "Clinical Practice Guidelines for Multiple Endocrine Neoplasia Type 1 (MEN1) (Thakker et al.)",
+      "url": "https://academic.oup.com/jcem/article/97/9/2990/2536740",
+      "year": "2012",
+      "tier": "1"
+    },
+    "notes": "J Clin Endocrinol Metab 2012;97(9):2990-3011. Most common combination: primary hyperparathyroidism + pituitary adenoma + enteropancreatic NET (gastrinoma/insulinoma)."
+  },
+  {
+    "id": "men2a",
+    "name": "Multiple Endocrine Neoplasia Type 2A (MEN2A)",
+    "category": "endocrine/genetic-neoplasia",
+    "criterion": "Clinical diagnosis: ≥2 of medullary thyroid carcinoma (MTC), pheochromocytoma, and primary hyperparathyroidism in a single individual or in close relatives. Confirmation by identification of a germline gain-of-function RET pathogenic variant.",
+    "criterion_quote": "MEN2A is diagnosed clinically by the occurrence of two or more specific endocrine tumors (MTC, pheochromocytoma, or parathyroid adenoma/hyperplasia) in a single individual or in close relatives.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "GeneReviews / NCBI (RET-related MEN2; underlying ATA reference: Wells et al. 2015)",
+      "title": "Multiple Endocrine Neoplasia Type 2 - GeneReviews",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1257/",
+      "year": "2023",
+      "tier": "1"
+    },
+    "notes": "Underlying specialty-society guideline: Wells SA et al., Revised American Thyroid Association Guidelines for the Management of Medullary Thyroid Carcinoma, Thyroid 2015;25(6):567-610. RET codon-stratified risk categories (MOD/H/HST) guide age of prophylactic thyroidectomy."
+  },
+  {
+    "id": "men2b",
+    "name": "Multiple Endocrine Neoplasia Type 2B (MEN2B)",
+    "category": "endocrine/genetic-neoplasia",
+    "criterion": "Clinical diagnosis: early-onset MTC plus mucosal neuromas of lips/tongue, medullated corneal nerve fibers, distinctive facies with enlarged lips, and marfanoid habitus. Pheochromocytoma in ~50%. Confirmation by germline RET mutation (most commonly M918T).",
+    "criterion_quote": "MEN2B is diagnosed clinically by the presence of early-onset MTC, mucosal neuromas of the lips and tongue, as well as medullated corneal nerve fibers, distinctive facies with enlarged lips, and an asthenic, marfanoid body habitus.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "GeneReviews / NCBI (RET-related MEN2; underlying ATA reference: Wells et al. 2015)",
+      "title": "Multiple Endocrine Neoplasia Type 2 - GeneReviews",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1257/",
+      "year": "2023",
+      "tier": "1"
+    },
+    "notes": "ATA highest-risk (HST) category includes M918T; recommended prophylactic thyroidectomy within first year of life."
+  },
+  {
+    "id": "klinefelter_syndrome",
+    "name": "Klinefelter Syndrome (EAA 2020, endorsed by ESE)",
+    "category": "endocrine/male-reproductive",
+    "criterion": "Karyotype with one or more supernumerary X chromosomes in a phenotypic male (most commonly 47,XXY). Karyotype analysis indicated in men with primary hypogonadism (low testosterone, elevated LH/FSH) and testis volume <5 mL, or non-obstructive severe oligozoospermia/azoospermia.",
+    "criterion_quote": "Klinefelter syndrome (KS) is the most frequent sex chromosomal anomaly in males, described by a karyotype with one or more extra X chromosome (most frequently 47,XXY) in men... All patients with primary hypogonadism, increased levels of gonadotropins and testis volume <5 mL, as well as patients with non-obstructive severe oligozoospermia, should have karyotype analysis to exclude or confirm KS.",
+    "verifiable_from_chart_labs": true,
+    "source": {
+      "org": "European Academy of Andrology (endorsed by European Society of Endocrinology)",
+      "title": "European Academy of Andrology guidelines on Klinefelter Syndrome (Zitzmann et al.)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/andr.12909",
+      "year": "2020",
+      "tier": "1"
+    },
+    "notes": "Andrology 2021;9(1):145-167. PMID 32959490. Mosaic (46,XY/47,XXY) and higher-grade variants (48,XXXY; 49,XXXXY) also recognized."
+  }
+]
+
+TALLY:
+- hyperthyroidism_overt (ATA 2016)
+- hyperthyroidism_subclinical (ATA 2016)
+- graves_disease (ATA 2016)
+- gestational_diabetes_iadpsg (IADPSG 2010 / ADA)
+- adrenal_incidentaloma_2023 (ESE/ENSAT 2023)
+- men1 (Endocrine Society 2012, Thakker)
+- men2a (GeneReviews / ATA 2015 Wells)
+- men2b (GeneReviews / ATA 2015 Wells)
+- klinefelter_syndrome (EAA 2020, ESE-endorsed)
+
+Total: 9 new criteria added, all tier=1, all source URLs verified to resolve.

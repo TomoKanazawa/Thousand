@@ -31,7 +31,7 @@ from anthropic import APIError, Anthropic
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parent
-PILOT = ROOT / "pilot_hide_one"
+PILOT = ROOT / "pilot_hide_one_v2"
 MODEL = "claude-haiku-4-5"
 
 ASSIST_PROMPT = """You are a senior internal medicine physician reviewing a patient's chart as a SAFETY-NET CHECK.
@@ -238,14 +238,39 @@ def main() -> None:
     client = Anthropic()
 
     manifest = json.loads((PILOT / "manifest.json").read_text())
-    results = []
-    for entry in manifest:
-        try:
-            results.append(run_case(client, str(entry["hadm_id"])))
-        except Exception as e:
-            print(f"  [{entry['hadm_id']}] ERROR: {e}")
 
-    (PILOT / "results_haiku_confidence.json").write_text(json.dumps(results, indent=2))
+    # Resume from checkpoint if it exists
+    out_path = PILOT / "results_haiku_confidence.json"
+    results: list[dict] = []
+    done_ids: set[str] = set()
+    if out_path.exists():
+        try:
+            results = json.loads(out_path.read_text())
+            done_ids = {str(r.get("hadm_id")) for r in results if "hadm_id" in r and "error" not in r}
+            print(f"Resuming: {len(done_ids)} cases already done; skipping them.", flush=True)
+        except Exception:
+            print("(could not parse existing output; starting fresh)", flush=True)
+            results = []
+
+    total = len(manifest)
+    print(f"Benchmarking {total} cases ({total - len(done_ids)} remaining)…", flush=True)
+
+    for i, entry in enumerate(manifest, 1):
+        hadm = str(entry["hadm_id"])
+        if hadm in done_ids:
+            continue
+        try:
+            results.append(run_case(client, hadm))
+        except BaseException as e:
+            err_msg = f"{type(e).__name__}: {e}"
+            print(f"  [{hadm}] ERROR: {err_msg}", flush=True)
+            results.append({"hadm_id": entry["hadm_id"], "error": err_msg})
+            if isinstance(e, KeyboardInterrupt):
+                out_path.write_text(json.dumps(results, indent=2))
+                raise
+        # Checkpoint after each case
+        out_path.write_text(json.dumps(results, indent=2))
+        print(f"  [{i}/{total}] checkpoint saved ({len(results)} entries)", flush=True)
 
     sweep_md = sweep_thresholds(results, top_k=3)
     (PILOT / "threshold_sweep.md").write_text(sweep_md)

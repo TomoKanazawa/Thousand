@@ -1,0 +1,157 @@
+[
+  {
+    "id": "endometrial_cancer_staging",
+    "name": "Endometrial Cancer (AJCC 8 / FIGO 2009)",
+    "category": "oncologic",
+    "criterion": "Stage I: tumor confined to corpus uteri (IA <50% myometrial invasion; IB ≥50%). Stage II: invades cervical stroma, no extension beyond uterus. Stage III: local/regional spread (IIIA serosa/adnexae; IIIB vaginal/parametrial; IIIC1 positive pelvic nodes; IIIC2 positive para-aortic nodes ± pelvic). Stage IV: IVA bladder/bowel mucosa; IVB distant mets including intra-abdominal/inguinal nodes.",
+    "criterion_quote": "Stage I: Tumor confined to the corpus uteri. IA: No or less than half myometrial invasion. IB: Invasion equal to or more than half of the myometrium. Stage II: Tumor invades cervical stroma but does not extend beyond the uterus. Stage III: Local and/or regional spread of the tumor. IIIA: Tumor invades the serosa of the corpus uteri and/or adnexae. IIIB: Vaginal and/or parametrial involvement. IIIC1: Positive pelvic nodes. IIIC2: Positive para-aortic lymph nodes with or without positive pelvic lymph nodes. Stage IV: Tumor invades bladder and/or bowel mucosa, and/or distant metastases. IVA: Tumor invasion of bladder and/or bowel mucosa. IVB: Distant metastases, including intra-abdominal metastases and/or inguinal lymph nodes.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "NCI / AJCC / FIGO",
+      "title": "Endometrial Cancer Treatment (PDQ) — Health Professional Version (FIGO 2009 staging adopted in AJCC 8)",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "AJCC 8 adopted FIGO 2009 anatomic staging. Requires surgical pathology (hysterectomy + lymph node assessment). Endocervical glandular involvement only is Stage I (no longer II)."
+  },
+  {
+    "id": "cervical_cancer_staging",
+    "name": "Cervical Cancer (AJCC 8 / FIGO 2018)",
+    "category": "oncologic",
+    "criterion": "Stage I: confined to cervix (IA1 microscopic <3mm depth; IA2 microscopic 3–5mm depth; IB1 >5mm depth and <2cm; IB2 2–4cm; IB3 ≥4cm). Stage II: beyond cervix/uterus, not pelvic wall/lower vagina (IIA upper 2/3 vagina; IIB parametrial). Stage III: lower 1/3 vagina (IIIA), pelvic wall/hydronephrosis (IIIB), pelvic (IIIC1) or para-aortic (IIIC2) nodes. Stage IV: IVA bladder/rectum; IVB distant.",
+    "criterion_quote": "Stage IA1: The area of cancer can only be seen with a microscope and is less than 3 mm deep. Stage IA2: between 3 mm and 5 mm deep. Stage IB1: deeper than 5 mm and is less than 2 cm in greatest dimension. Stage IB2: at least 2 cm but not larger than 4 cm. Stage IB3: 4 cm or more in greatest dimension and limited to the cervix. Stage IIA: grown beyond the cervix, but not beyond the upper 2/3 of the vagina. Stage IIB: spread into the tissues next to the cervix (the parametria). Stage IIIA: spread to the lower 1/3 of the vagina but not the walls of the pelvis. Stage IIIB: grown into the walls of the pelvis and/or is blocking one or both ureters. Stage IIIC: spread to lymph nodes in the pelvis (IIIC1) or around the aorta (IIIC2). Stage IVA: spread to nearby organs such as the bladder or rectum. Stage IVB: spread to nearby organs outside the pelvic area, such as distant lymph nodes, lungs, or bones.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC / FIGO",
+      "title": "Cervical Cancer Stages (FIGO 2018 / AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/cervical-cancer/detection-diagnosis-staging/staged.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "FIGO 2018 revision: added IB3 (≥4cm) and IIIC for nodal involvement (imaging or pathology allowed). Hydronephrosis or non-functioning kidney qualifies as IIIB unless from another cause."
+  },
+  {
+    "id": "ovarian_cancer_staging",
+    "name": "Ovarian / Fallopian Tube / Primary Peritoneal Cancer (AJCC 8 / FIGO 2014)",
+    "category": "oncologic",
+    "criterion": "Stage I: confined to ovaries/tubes (IA one, capsule intact; IB both; IC surgical spill/capsule rupture/surface/positive washings). Stage II: pelvic extension (IIA uterus/tubes/ovaries; IIB other pelvic peritoneum). Stage III: peritoneal spread outside pelvis and/or retroperitoneal nodes (IIIA1 nodes only; IIIA2 microscopic extrapelvic; IIIB macro ≤2cm; IIIC >2cm or capsular liver/spleen). Stage IV: distant (IVA malignant pleural effusion; IVB parenchymal/extra-abdominal).",
+    "criterion_quote": "Stage I (T1, N0, M0): The cancer is only in the ovary (or ovaries) or fallopian tube(s). Stage II (T2, N0, M0): The cancer is in one or both ovaries or fallopian tubes and has spread to other organs (such as the uterus, bladder, the sigmoid colon, or the rectum) within the pelvis. Stage IIIA1: Retroperitoneal lymph node involvement only. Stage IIIB: Extrapelvic spread with deposits ≤2 cm. Stage IIIC: Extrapelvic deposits >2 cm, possibly involving liver/spleen capsule. Stage IVA: Cancer cells are found in the fluid around the lungs (called a malignant pleural effusion) with no other areas of cancer spread. Stage IVB: Spleen/liver parenchymal involvement, distant lymph nodes, or distant organ spread.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC / FIGO",
+      "title": "Ovarian Cancer Stages (FIGO 2014 / AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/ovarian-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "Surgical staging via laparotomy/laparoscopy with peritoneal washings, omentectomy, lymph node sampling. Includes fallopian tube and primary peritoneal carcinoma under same system."
+  },
+  {
+    "id": "head_neck_oral_cavity_staging",
+    "name": "Oral Cavity Squamous Cell Carcinoma (AJCC 8)",
+    "category": "oncologic",
+    "criterion": "T1: ≤2cm AND depth of invasion (DOI) ≤5mm. T2: ≤2cm AND DOI >5mm, OR 2–4cm AND DOI ≤10mm. T3: 2–4cm AND DOI >10mm, OR >4cm AND DOI ≤10mm. T4a: >4cm AND DOI >10mm OR invading bone/sinus/skin. T4b: invades skull base or encases internal carotid. N1: single ipsilateral node ≤3cm without ENE. N2a–c: 3–6cm or multiple, no ENE. N3a: >6cm without ENE. N3b: any node with clinical ENE (or multiple with ENE).",
+    "criterion_quote": "T1: 2 cm or smaller and depth of invasion (DOI) is 5mm or less. T2: 2 cm or smaller and DOI is greater than 5mm or larger than 2 cm but no larger than 4 cm and DOI is 10mm or less. T3: larger than 2 cm but no larger than 4 cm and DOI is greater than 10mm or larger than 4 cm and DOI is 10mm or less. T4a: larger than 4 cm and DOI is greater than 10mm or any size and growing into nearby structures such as bone, sinus, or skin. T4b: Any size and growing into nearby structures such as the base of the skull or other bones nearby, or surrounds the internal carotid artery. N1: Single lymph node on the same side, 3 cm or smaller, and has not grown outside the lymph node. N3a: Lymph node larger than 6cm and has not grown outside. N3b: larger than 3 cm and has grown outside.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Oral Cavity and Oropharyngeal Cancer Stages (AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/oral-cavity-and-oropharyngeal-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "AJCC 8 added depth of invasion (DOI) to T staging and extranodal extension (ENE) to N staging — major changes from AJCC 7."
+  },
+  {
+    "id": "head_neck_oropharynx_hpv_staging",
+    "name": "HPV/p16-Positive Oropharyngeal SCC (AJCC 8)",
+    "category": "oncologic",
+    "criterion": "Separate staging system for p16-positive oropharyngeal SCC. Clinical: T1 ≤2cm; T2 2–4cm; T3 >4cm or extension to lingual surface of epiglottis; T4 invades larynx, deep tongue muscles, hard palate, mandible, or beyond. N1: ≤4 ipsilateral nodes; N2: contralateral/bilateral nodes; N3: node >6cm. Stage groupings simplified to I–IV with better prognosis than p16-negative.",
+    "criterion_quote": "p16 (HPV)-positive oropharyngeal cancers have a better prognosis... p16-positive cancers using simplified categories (I-IV).",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Oral Cavity and Oropharyngeal Cancer Stages (AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/oral-cavity-and-oropharyngeal-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "AJCC 8 created separate p16+ oropharyngeal staging to reflect dramatically better prognosis. Requires p16 IHC (surrogate for HPV) on biopsy."
+  },
+  {
+    "id": "thyroid_differentiated_staging",
+    "name": "Differentiated Thyroid Cancer (Papillary/Follicular, AJCC 8)",
+    "category": "oncologic",
+    "criterion": "Age <55 at diagnosis: Stage I (any T, any N, M0), Stage II (any T, any N, M1). Age ≥55: Stage I T1–T2 N0/Nx M0; Stage II T1–T2 N1 M0 or T3a/T3b any N M0 (T3a >4cm confined; T3b gross extrathyroidal extension to strap muscles); Stage III T4a any N M0 (invades subcutaneous, larynx, trachea, esophagus, recurrent laryngeal nerve); Stage IVA T4b any N M0 (invades prevertebral fascia, carotid, mediastinal vessels); Stage IVB any T any N M1.",
+    "criterion_quote": "Age ≥ 55 years: Stage I T1/T2 N0/NX M0 — tumor is no larger than 2 centimeters across and is still just in the thyroid (T1) or 2-4 cm confined to thyroid (T2). Stage II T3a/T3b Any N M0 — larger than 4 cm or grown into the strap muscles. Stage III T4a Any N M0 — extension into larynx, trachea, esophagus, or nerve. Stage IVA T4b Any N M0 — grown extensively beyond toward the spine. Stage IVB Any T Any N M1 — distant metastasis (lungs, bones, brain).",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Thyroid Cancer Stages (AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/thyroid-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "AJCC 8 raised age cutoff from 45 to 55 years — major change reflecting indolent biology in younger patients. Most patients <55 are Stage I regardless of nodes/local extension."
+  },
+  {
+    "id": "thyroid_medullary_staging",
+    "name": "Medullary Thyroid Cancer (AJCC 8)",
+    "category": "oncologic",
+    "criterion": "Stage I: T1 (≤2cm, intrathyroidal) N0 M0. Stage II: T2 (2–4cm) or T3 (>4cm or strap muscle invasion) N0 M0. Stage III: T1–T3 N1a (level VI/VII nodes) M0. Stage IVA: T4a any N M0 or T1–T3 N1b (lateral cervical/upper mediastinal) M0. Stage IVB: T4b any N M0 (prevertebral fascia/carotid/mediastinal vessels). Stage IVC: any T any N M1.",
+    "criterion_quote": "Stage I T1 N0 M0 — no more than 2 centimeters, just in the thyroid. Stage II T2/T3 N0 M0 — 2-4 cm or >4 cm or growing into the strap muscles. Stage III T1/T2/T3 N1a M0 — Regional nodes (pretracheal/paratracheal). Stage IVA T4a Any N M0 — Local extension beyond thyroid. Stage IVA T1/T2/T3 N1b M0 — Distant cervical/jugular nodes. Stage IVB T4b Any N M0 — Invasion toward spine or vessels. Stage IVC Any T Any N M1 — Distant metastasis.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Thyroid Cancer Stages (AJCC 8) — Medullary",
+      "url": "https://www.cancer.org/cancer/types/thyroid-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "No age cutoff for medullary (unlike differentiated). Calcitonin and CEA are key serum markers; ~25% are hereditary (MEN2A/2B, FMTC)."
+  },
+  {
+    "id": "thyroid_anaplastic_staging",
+    "name": "Anaplastic Thyroid Cancer (AJCC 8)",
+    "category": "oncologic",
+    "criterion": "All anaplastic thyroid cancer is Stage IV by definition. Stage IVA: T1–T3a (intrathyroidal) N0/Nx M0. Stage IVB: T1–T3a N1 M0, OR T3b (gross extrathyroidal extension to strap muscles) any N M0, OR T4 (gross extrathyroidal extension) any N M0. Stage IVC: any T any N M1.",
+    "criterion_quote": "Stage IVA T1/T2/T3a N0/NX M0 — Confined to thyroid. Stage IVB T1/T2/T3a N1 M0 — Regional node involvement. Stage IVB T3b Any N M0 — Extension to strap muscles. Stage IVB T4 Any N M0 — Local tissue invasion. Stage IVC Any T Any N M1 — spread to lungs, bones, or brain.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Thyroid Cancer Stages (AJCC 8) — Anaplastic",
+      "url": "https://www.cancer.org/cancer/types/thyroid-cancer/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "Anaplastic thyroid cancer is among the most lethal human malignancies. Median survival 5–6 months; AJCC 8 retained Stage IV-only classification."
+  },
+  {
+    "id": "soft_tissue_sarcoma_staging",
+    "name": "Soft Tissue Sarcoma — Trunk/Extremities (AJCC 8)",
+    "category": "oncologic",
+    "criterion": "T1 ≤5cm; T2 >5–10cm; T3 >10–15cm; T4 >15cm. Grade G1 (low) / G2 (intermediate) / G3 (high) by FNCLCC. N0 no regional nodes; N1 regional nodes positive. M0/M1. Stage IA: T1 N0 M0 G1/GX. IB: T2–T4 N0 M0 G1/GX. II: T1 N0 M0 G2/G3. IIIA: T2 N0 M0 G2/G3. IIIB: T3–T4 N0 M0 G2/G3. IV: any T N1 M0, OR any T any N M1.",
+    "criterion_quote": "T1: 5 cm or smaller. T2: Larger than 5 cm but not more than 10 cm. T3: Larger than 10cm but not more than 15 cm. T4: Larger than 15 cm. N0: has not spread to nearby lymph nodes. M0: has not spread to distant sites. M1: Has spread to distant sites such as the lungs. Stage IA: T1, N0, M0, G1/GX. Stage IB: T2-4, N0, M0, G1/GX. Stage II: T1, N0, M0, G2/G3. Stage IIIA: T2, N0, M0, G2/G3. Stage IIIB: T3-4, N0, M0, G2/G3. Stage IV: Any T, N1, M0 OR Any T/N, M1.",
+    "verifiable_from_chart_labs": false,
+    "source": {
+      "org": "American Cancer Society / AJCC",
+      "title": "Soft Tissue Sarcoma Stages (AJCC 8)",
+      "url": "https://www.cancer.org/cancer/types/soft-tissue-sarcoma/detection-diagnosis-staging/staging.html",
+      "year": "2017 (published); 2018 effective",
+      "tier": "1"
+    },
+    "notes": "AJCC 8 expanded size from 2 tiers (≤5, >5cm) to 4 tiers and provides separate staging schemes by anatomic site (trunk/extremities, retroperitoneum, head/neck, viscera). Retroperitoneal STS has an additional Stage IIIB for any T N1 M0 any G."
+  }
+]
+
+Tally: 9 conditions added.
+- endometrial_cancer_staging
+- cervical_cancer_staging
+- ovarian_cancer_staging
+- head_neck_oral_cavity_staging
+- head_neck_oropharynx_hpv_staging
+- thyroid_differentiated_staging
+- thyroid_medullary_staging
+- thyroid_anaplastic_staging
+- soft_tissue_sarcoma_staging
